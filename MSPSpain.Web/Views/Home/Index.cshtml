@@ -1,2 +1,42 @@
-﻿<h2>Hola, Quique!</h2>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> #MSPSpain - Web Microsoft Student Partners España </title>
 
+    <!-- CSS -->
+    <!-- build:css css/styles.css -->
+    <!-- inject:css -->
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+<body ng-app="Msp">
+    <div class="main">
+        <header class="header">
+            <h1 class="header__title">MSPSpain</h1>
+            <nav class="header__menu" ng-controller="navigationController">
+                <ul class="header__menu__list">
+                    <li class="header__menu__list__item" ng-class="classActive('/Inicio')"> <a href="#/Inicio">Inicio</a></li>
+                    <li class="header__menu__list__item" ng-class="classActive('/ListaMSP')"> <a href="#/ListaMSP">Quienes somos</a></li>
+                    <li class="header__menu__list__item" ng-class="classActive('/Proyectos')"> <a href="#/Proyectos">Nuestros proyectos</a></li>
+                    <li class="header__menu__list__item" ng-class="classActive('/Mapa')"> <a href="#/Mapa">Donde estamos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section ng-view class="content"></section>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+
+    <!-- build:js js/code.js -->
+    <!-- inject:js -->
+    <script src="ts/Controllers/NavigationController.js"></script>
+    <script src="ts/Controllers/maincontroller.js"></script>
+    <script src="ts/App.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+
+</html>
