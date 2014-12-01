@@ -7,6 +7,7 @@
     <!-- build:css css/styles.css -->
     <!-- inject:css -->
     <link href="css/main.css" rel="stylesheet" />
+    <link href='<%= Url.Content("css/main.css")%>' rel="stylesheet" type="text/css" />
     <!-- endinject -->
     <!-- endbuild -->
 </head>
@@ -32,9 +33,12 @@
 
     <!-- build:js js/code.js -->
     <!-- inject:js -->
-    <script src="ts/Controllers/NavigationController.js"></script>
-    <script src="ts/Controllers/maincontroller.js"></script>
-    <script src="ts/App.js"></script>
+    <script src="~/Views/Home/ts/Controllers/maincontroller.js"></script>
+    <script src="~/Views/Home/ts/Controllers/MapController.js"></script>
+    <script src="~/Views/Home/ts/Controllers/MspListController.js"></script>
+    <script src="~/Views/Home/ts/Controllers/NavigationController.js"></script>
+    <script src="~/Views/Home/ts/Controllers/ProjectsController.js"></script>
+    <script src="~/Views/Home/ts/App.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 </body>

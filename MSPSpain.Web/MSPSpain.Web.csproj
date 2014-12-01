@@ -860,6 +860,12 @@
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Views\Home\gulpfile.js" />
+    <Content Include="Views\Home\ts\App.js" />
+    <Content Include="Views\Home\ts\Controllers\maincontroller.js" />
+    <Content Include="Views\Home\ts\Controllers\MapController.js" />
+    <Content Include="Views\Home\ts\Controllers\MspListController.js" />
+    <Content Include="Views\Home\ts\Controllers\NavigationController.js" />
+    <Content Include="Views\Home\ts\Controllers\ProjectsController.js" />
     <Content Include="Views\Home\Views\MspListPage.html" />
     <Content Include="Views\Home\Views\ProjectsPage.html" />
     <Content Include="Views\Home\Views\MapPage.html" />
