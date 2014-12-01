@@ -92,6 +92,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\ts\App.js" />
+    <Content Include="Content\ts\Controllers\maincontroller.js" />
+    <Content Include="Content\ts\Controllers\MapController.js" />
+    <Content Include="Content\ts\Controllers\MspListController.js" />
+    <Content Include="Content\ts\Controllers\NavigationController.js" />
+    <Content Include="Content\ts\Controllers\ProjectsController.js" />
+    <Content Include="Content\ts\imports.js" />
+    <Content Include="Content\Views\MainPage.html" />
+    <Content Include="Content\Views\MapPage.html" />
+    <Content Include="Content\Views\MspListPage.html" />
+    <Content Include="Content\Views\ProjectsPage.html" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -859,17 +871,6 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="Views\Home\gulpfile.js" />
-    <Content Include="Views\Home\ts\App.js" />
-    <Content Include="Views\Home\ts\Controllers\maincontroller.js" />
-    <Content Include="Views\Home\ts\Controllers\MapController.js" />
-    <Content Include="Views\Home\ts\Controllers\MspListController.js" />
-    <Content Include="Views\Home\ts\Controllers\NavigationController.js" />
-    <Content Include="Views\Home\ts\Controllers\ProjectsController.js" />
-    <Content Include="Views\Home\Views\MspListPage.html" />
-    <Content Include="Views\Home\Views\ProjectsPage.html" />
-    <Content Include="Views\Home\Views\MapPage.html" />
-    <Content Include="Views\Home\Views\MainPage.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
@@ -883,6 +884,14 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Content\package.json" />
+    <Content Include="Content\ts\App.js.map" />
+    <Content Include="Content\ts\Controllers\maincontroller.js.map" />
+    <Content Include="Content\ts\Controllers\MapController.js.map" />
+    <Content Include="Content\ts\Controllers\MspListController.js.map" />
+    <Content Include="Content\ts\Controllers\NavigationController.js.map" />
+    <Content Include="Content\ts\Controllers\ProjectsController.js.map" />
+    <Content Include="Content\ts\imports.js.map" />
     <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -897,7 +906,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Home\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -910,6 +918,13 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Content\ts\App.ts" />
+    <TypeScriptCompile Include="Content\ts\Controllers\MainController.ts" />
+    <TypeScriptCompile Include="Content\ts\Controllers\MapController.ts" />
+    <TypeScriptCompile Include="Content\ts\Controllers\MspListController.ts" />
+    <TypeScriptCompile Include="Content\ts\Controllers\NavigationController.ts" />
+    <TypeScriptCompile Include="Content\ts\Controllers\ProjectsController.ts" />
+    <TypeScriptCompile Include="Content\ts\imports.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
@@ -919,13 +934,6 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-scenario.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\App.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\Controllers\MapController.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\Controllers\ProjectsController.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\Controllers\MspListController.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\Controllers\MainController.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\Controllers\NavigationController.ts" />
-    <TypeScriptCompile Include="Views\Home\ts\imports.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

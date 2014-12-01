@@ -3,6 +3,10 @@ var Msp;
 (function (Msp) {
     'use strict';
 
+    var root = function (page) {
+        return page;
+    };
+
     Msp.config = {
         api: {}
     };
@@ -12,16 +16,16 @@ var Msp;
     function routes($routeProvider) {
         $routeProvider.when('/', {
             controller: 'mainController',
-            templateUrl: 'Views/MainPage.html'
+            templateUrl: root('Views/MainPage.html')
         }).when('/ListaMSP', {
             controller: 'mspListController',
-            templateUrl: 'Views/MspListPage.html'
+            templateUrl: root('Views/MspListPage.html')
         }).when('/Proyectos', {
             controller: 'projectsController',
-            templateUrl: 'Views/ProjectsPage.html'
+            templateUrl: root('Views/ProjectsPage.html')
         }).when('/Mapa', {
             controller: 'mapController',
-            templateUrl: 'Views/MapPage.html'
+            templateUrl: root('Views/MapPage.html')
         }).otherwise({
             redirectTo: '/'
         });

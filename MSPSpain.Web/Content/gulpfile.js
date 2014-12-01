@@ -7,8 +7,8 @@ var files = {
 	buildCSS: 'build/styles.css',
 	css: 'css/**/*.css',
 	filePaths: ['ts/Services/*.js', 'ts/Models/*.js', 'ts/Interfaces/*.js', 'ts/Controllers/*.js', 'ts/App.js'],
-	index: 'index.cshtml',
-	indexBkp: 'index.cshtml.bkp',
+	index: '../Views/Home/Index.cshtml',
+	indexBkp: '../Views/Home/Index.cshtml.bkp',
 	scss: 'scss/*.scss',
 	scssAll: 'scss/**/*.scss'
 };
@@ -16,7 +16,7 @@ var files = {
 var paths = {
 	build: 'build',
 	css: 'css',
-	project: '',
+	project: '../Views/Home/',
 	scss: 'scss'
 };
 
@@ -35,10 +35,10 @@ gulp.task('inject', function() {
 			{
 				transform: function (filepath) {
 					if (filepath.indexOf('.js') > -1) {
-						return '<script src="' + filepath.slice(1) + '"></script>'
+					    return '<script src="@Url.Content("~/Content/' + filepath.slice(1) + '")"></script>'
 					}
 					// Css
-					return ' <link rel="stylesheet" href="' + filepath + '">'
+					return ' <link rel="stylesheet" href="@Url.Content("~/Content/' + filepath + '")">'
 				}
 			}
 		))
