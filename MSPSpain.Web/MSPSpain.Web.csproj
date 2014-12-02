@@ -92,7 +92,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\FakeJSON\MspList.json" />
+    <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
+    <Content Include="Content\FakeJSON\MspJSON.txt" />
     <Content Include="Content\gulpfile.js" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />
@@ -886,13 +887,6 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Content\package.json" />
-    <Content Include="Content\ts\App.js.map" />
-    <Content Include="Content\ts\Controllers\maincontroller.js.map" />
-    <Content Include="Content\ts\Controllers\MapController.js.map" />
-    <Content Include="Content\ts\Controllers\MspListController.js.map" />
-    <Content Include="Content\ts\Controllers\NavigationController.js.map" />
-    <Content Include="Content\ts\Controllers\ProjectsController.js.map" />
-    <Content Include="Content\ts\imports.js.map" />
     <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

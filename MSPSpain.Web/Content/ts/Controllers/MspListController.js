@@ -4,11 +4,16 @@ var Msp;
     'use strict';
 
     var MspListController = (function () {
-        function MspListController($scope) {
+        function MspListController($scope, $http) {
             this.$scope = $scope;
+            this.$http = $http;
+            $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
+                $scope.users = usersJSON;
+            });
         }
         MspListController.$inject = [
-            '$scope'
+            '$scope',
+            '$http'
         ];
         return MspListController;
     })();

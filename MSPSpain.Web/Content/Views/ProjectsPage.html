@@ -1,1 +1,7 @@
 ﻿Esto es la lista de proyectos
+<ul>
+    <li ng-repeat="project in projects">
+        {{project.name}} <br />
+        <img src="{{project.images[0]}}" alt="" />
+    </li>
+</ul>

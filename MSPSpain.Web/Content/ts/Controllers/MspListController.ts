@@ -6,12 +6,18 @@ module Msp {
     export class MspListController {
 
         public static $inject = [
-            '$scope'
+            '$scope',
+            '$http'
         ];
 
         constructor(
-            private $scope: ng.IScope
+            private $scope: any,
+            private $http: ng.IHttpService
             ) {
+
+            $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
+                $scope.users = usersJSON;
+            });
         }
     }
 } 

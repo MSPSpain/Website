@@ -6,12 +6,18 @@ module Msp {
     export class ProjectsController {
 
         public static $inject = [
-            '$scope'
+            '$scope',
+            '$http'
         ];
 
         constructor(
-            private $scope: ng.IScope
+            private $scope: any,
+            private $http: ng.IHttpService
             ) {
+
+            $http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
+                $scope.projects = projectsJSON;
+            });
         }
     }
 } 
