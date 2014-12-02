@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DotNetClubRepository.cs" />
     <Compile Include="Database\IDotNetClubRepository.cs" />
     <Compile Include="Database\IMspRepository.cs" />
+    <Compile Include="Database\MspRepository.cs" />
     <Compile Include="Model\DotNetClub.cs" />
     <Compile Include="Model\Msp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

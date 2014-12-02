@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSPSpain.Service.Model
+﻿namespace MSPSpain.Service.Model
 {
     public class Msp
     {
@@ -13,5 +7,7 @@ namespace MSPSpain.Service.Model
         public string LastNames { get; set; }
         public string City { get; set; }
         public string AutonomousCommunity { get; set; }
+
+        public virtual DotNetClub DotNetClub { get; set; }
     }
 }

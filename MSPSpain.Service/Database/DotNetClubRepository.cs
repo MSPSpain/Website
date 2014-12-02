@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace MSPSpain.Service.Database
 {
-    public interface IMspRepository
+    public class DotNetClubRepository : IDotNetClubRepository
     {
-        Task<IQueryable<Msp>> GetMsps();
+        public Task<IQueryable<DotNetClub>> GetDotNetClubs()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
