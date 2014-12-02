@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\FakeJSON\MspList.json" />
     <Content Include="Content\gulpfile.js" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />

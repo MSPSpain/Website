@@ -4,11 +4,12 @@ var Msp;
     'use strict';
 
     var root = function (page) {
-        return page;
+        return 'Content/' + page;
     };
 
     Msp.config = {
-        api: {}
+        api: {},
+        viewsPath: '/Content/Views/'
     };
 
     angular.module('Msp', ['ngRoute']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]);
@@ -16,16 +17,16 @@ var Msp;
     function routes($routeProvider) {
         $routeProvider.when('/', {
             controller: 'mainController',
-            templateUrl: root('Views/MainPage.html')
+            templateUrl: Msp.config.viewsPath + 'MainPage.html'
         }).when('/ListaMSP', {
             controller: 'mspListController',
-            templateUrl: root('Views/MspListPage.html')
+            templateUrl: Msp.config.viewsPath + 'MspListPage.html'
         }).when('/Proyectos', {
             controller: 'projectsController',
-            templateUrl: root('Views/ProjectsPage.html')
+            templateUrl: Msp.config.viewsPath + 'ProjectsPage.html'
         }).when('/Mapa', {
             controller: 'mapController',
-            templateUrl: root('Views/MapPage.html')
+            templateUrl: Msp.config.viewsPath + 'MapPage.html'
         }).otherwise({
             redirectTo: '/'
         });

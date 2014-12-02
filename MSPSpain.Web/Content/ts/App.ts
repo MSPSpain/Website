@@ -4,13 +4,15 @@ module Msp {
     'use strict';
 
     var root = function (page) {
-        return page;
+        return 'Content/' + page;
     };
 
     export var config = {
         api: {
             //baseUrl: <string> 'https://photochat.luisguerrero.net/api/user/',
-        }
+        },
+
+        viewsPath: '/Content/Views/'
     }
 
     angular.module('Msp', ['ngRoute'])
@@ -26,19 +28,19 @@ module Msp {
         $routeProvider
             .when('/', {
                 controller: 'mainController',
-                templateUrl: root('Views/MainPage.html')
+                templateUrl: config.viewsPath + 'MainPage.html'
             })
             .when('/ListaMSP', {
                 controller: 'mspListController',
-                templateUrl: root('Views/MspListPage.html')
+                templateUrl: config.viewsPath + 'MspListPage.html'
             })
             .when('/Proyectos', {
                 controller: 'projectsController',
-                templateUrl: root('Views/ProjectsPage.html')
+                templateUrl: config.viewsPath + 'ProjectsPage.html'
             })
             .when('/Mapa', {
                 controller: 'mapController',
-                templateUrl: root('Views/MapPage.html')
+                templateUrl: config.viewsPath + 'MapPage.html'
             })
             .otherwise({
                 redirectTo: '/'
