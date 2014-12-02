@@ -95,6 +95,7 @@
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
     <Content Include="Content\FakeJSON\MspJSON.txt" />
     <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\Images\Icons\0.png" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />
     <Content Include="Content\ts\Controllers\MapController.js" />
@@ -928,6 +929,15 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-scenario.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.AdvancedShapes.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.All.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.Directions.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.Overlay.Style.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.Search.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.Themes.BingTheme.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.Traffic.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bingmaps\Microsoft.Maps.VenueMaps.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>
