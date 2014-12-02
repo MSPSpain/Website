@@ -35,10 +35,10 @@ gulp.task('inject', function() {
 			{
 				transform: function (filepath) {
 					if (filepath.indexOf('.js') > -1) {
-					    return '<script src="@Url.Content("~/Content/' + filepath.slice(1) + '")"></script>'
+					    return '<script src="/Content/' + filepath.slice(1) + '"></script>'
 					}
 					// Css
-					return ' <link rel="stylesheet" href="@Url.Content("~/Content/' + filepath + '")">'
+					return ' <link rel="stylesheet" href="Content/' + filepath + '">'
 				}
 			}
 		))
