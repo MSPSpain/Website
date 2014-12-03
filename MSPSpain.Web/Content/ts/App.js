@@ -3,17 +3,16 @@ var Msp;
 (function (Msp) {
     'use strict';
 
-    var root = function (page) {
-        return 'Content/' + page;
-    };
-
+    // App configuration object
     Msp.config = {
         api: {},
         viewsPath: '/Content/Views/'
     };
 
+    // Angular App
     angular.module('Msp', ['ngRoute']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]);
 
+    // Router configuration
     function routes($routeProvider) {
         $routeProvider.when('/', {
             controller: 'mainController',

@@ -15,6 +15,7 @@ module Msp {
             private $http: ng.IHttpService
             ) {
 
+            // Obtain list of MSP
             $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
                 $scope.users = usersJSON;
             });
