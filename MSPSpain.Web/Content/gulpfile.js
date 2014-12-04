@@ -24,6 +24,9 @@ var paths = {
 gulp.task('sass', function(){
 	return gulp.src(files.scss)
 		.pipe(plugins.sass())
+		.pipe(plugins.autoprefixer({
+		    browsers: ['last 2 version', 'ios 6', 'android 4']
+		}))
 		.pipe(gulp.dest(paths.css));
 });
 
@@ -35,7 +38,7 @@ gulp.task('inject', function() {
 			{
 				transform: function (filepath) {
 					if (filepath.indexOf('.js') > -1) {
-					    return '<script src="/Content/' + filepath.slice(1) + '"></script>'
+						return '<script src="/Content/' + filepath.slice(1) + '"></script>'
 					}
 					// Css
 					return ' <link rel="stylesheet" href="Content/' + filepath + '">'

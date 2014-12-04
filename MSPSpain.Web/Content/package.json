@@ -1,5 +1,5 @@
 {
-  "name": "Photochat",
+  "name": "MSPWebsite",
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
@@ -10,7 +10,7 @@
     "gulp-concat": "*",
     "gulp-clone": "*",
     "gulp-rename":  "*",
-    "gulp-imagemin": "*",
+    "gulp-autoprefixer": "*",
     "gulp-inject": "*",
     "gulp-minify-css": "*",
     "gulp-minify-html": "~0.1.0",

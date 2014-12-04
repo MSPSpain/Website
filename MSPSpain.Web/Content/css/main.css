@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/OpenSans/Light/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans/Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Light/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans/Light/OpenSans-Light.ttf') format('truetype'), url('../fonts/OpenSans/Light/OpenSans-Light.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: 100;
+  font-style: italic;
+  src: url('../fonts/OpenSans/LightItalic/OpenSans-LightItalic.eot');
+  src: url('../fonts/OpenSans/LightItalic/OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/LightItalic/OpenSans-LightItalic.woff') format('woff'), url('../fonts/OpenSans/LightItalic/OpenSans-LightItalic.ttf') format('truetype'), url('../fonts/OpenSans/LightItalic/OpenSans-LightItalic.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans/Regular/OpenSans-Regular.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: normal;
+  font-style: italic;
+  src: url('../fonts/OpenSans/Italic/OpenSans-Italic.eot');
+  src: url('../fonts/OpenSans/Italic/OpenSans-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Italic/OpenSans-Italic.woff') format('woff'), url('../fonts/OpenSans/Italic/OpenSans-Italic.ttf') format('truetype'), url('../fonts/OpenSans/Italic/OpenSans-Italic.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot');
+  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff') format('woff'), url('../fonts/OpenSans/Semibold/OpenSans-Semibold.ttf') format('truetype'), url('../fonts/OpenSans/Semibold/OpenSans-Semibold.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-style: italic;
+  src: url('../fonts/OpenSans/SemiboldItalic/OpenSans-SemiboldItalic.eot');
+  src: url('../fonts/OpenSans/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/SemiboldItalic/OpenSans-SemiboldItalic.woff') format('woff'), url('../fonts/OpenSans/SemiboldItalic/OpenSans-SemiboldItalic.ttf') format('truetype'), url('../fonts/OpenSans/SemiboldItalic/OpenSans-SemiboldItalic.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bolder;
+  font-style: normal;
+  src: url('../fonts/OpenSans/Bold/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans/Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans/Bold/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans/Bold/OpenSans-Bold.svg#OpenSans') format('svg'); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bolder;
+  font-style: italic;
+  src: url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.eot');
+  src: url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.woff') format('woff'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.ttf') format('truetype'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.svg#OpenSans') format('svg'); }
+
+body, html {
+  background: #F0F0F0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: OpenSans;
+  font-weight: 100; }
+  @media screen and (max-width: 832px) {
+    body, html {
+      font-size: 14px; } }
+
+a, a:visited, a:hover, a:active {
+  color: #0792fc;
+  text-decoration: none; }
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  display: table;
+  z-index: 10; }
+
+.header__title, .header__menu {
+  display: table-cell; }
+
+.header__title {
+  width: 300px;
+  padding-left: 50px;
+  font-size: 1.6em; }
+
+.header__menu {
+  text-align: right;
+  padding-right: 50px; }
+
+.header__menu__list {
+  list-style: none;
+  display: block; }
+  .header__menu__list a, .header__menu__list a:visited {
+    color: #FFFFFF; }
+  .header__menu__list a:hover, .header__menu__list a:active {
+    color: #EE8702; }
+
+.header__menu__list__item {
+  display: inline-block;
+  margin: 20px;
+  font-weight: bold; }
+
+.page {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.page__header {
+  height: 600px;
+  width: 100%;
+  margin-top: -20px;
+  background-size: cover;
+  border-bottom: 5px solid #EE8702;
+  position: relative; }
+  @media screen and (max-width: 832px) {
+    .page__header {
+      height: 400px;
+      font-size: 0.7em; } }
+  .page__header::before {
+    content: '';
+    width: 100%;
+    height: 480px;
+    margin-top: 116px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0; }
+    @media screen and (max-width: 832px) {
+      .page__header::before {
+        height: 280px; } }
+
+.page__header__titles {
+  color: #FFFFFF !important;
+  font-size: 4em;
+  width: 42%;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  text-shadow: 0px 0px 20px black; }
+  .page__header__titles h3 {
+    font-size: 0.4em;
+    margin-top: 20px;
+    line-height: 1.3em; }
+
+.page__header-main {
+  background-image: url('../images/headers/stairs_original.jpg'); }

@@ -1,0 +1,60 @@
+﻿@import '../utilities/variables';
+
+.page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+$header-height: 600px;
+$header-height-tablet-subs: 200px;
+
+.page__header {
+    height: $header-height;
+    width: 100%;
+    margin-top: -20px;
+    background-size: cover;
+    border-bottom: 5px solid $Color-Brand-main;
+    position: relative;
+
+    @media screen and (max-width: $Size-Window-tablet) {
+        height: $header-height - $header-height-tablet-subs;
+        font-size: 0.7em;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: $header-height - $Global-Header-height;
+        margin-top: $Global-Header-height - 4px; // height - border
+        background: rgba(black, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media screen and (max-width: $Size-Window-tablet) {
+            height: $header-height - $Global-Header-height - $header-height-tablet-subs;
+        }
+    }
+}
+
+.page__header__titles{
+    color: $Color-Foreground-light !important;
+    font-size: 4em;
+    width: 42%;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+
+    h3 {
+        font-size: 0.4em;
+        margin-top: 20px;
+        line-height: 1.3em;
+    }
+}
+
+.page__header-main {
+    background-image: url('../images/headers/stairs_original.jpg');
+}
+

@@ -1,0 +1,67 @@
+﻿@import '../utilities/variables';
+
+body, html {
+    background: $Color-Background-dimmed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: $Font-main;
+    font-weight: 100;
+
+    @media screen and (max-width: $Size-Window-tablet) {
+        font-size: 14px;
+    }
+}
+
+a, a:visited, a:hover, a:active {
+    color: $Color-Brand-secondary;
+    text-decoration: none;
+}
+
+.header {
+    background: rgba(black, 0.7);
+    color: $Color-Foreground-light;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: $Global-Header-height - 40px;
+    width: 100%;
+    padding: 20px;
+    display: table;
+    z-index: 10;
+}
+
+.header__title, .header__menu {
+    display: table-cell;
+}
+.header__title {
+    width: 300px;
+    padding-left: 50px;
+    font-size: 1.6em;
+}
+
+.header__menu {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.header__menu__list {
+    list-style: none;
+    display: block;
+
+    a, a:visited {
+        color: $Color-Foreground-light;
+    }
+
+    a:hover, a:active {
+        color: $Color-Brand-main;
+    }
+}
+
+.header__menu__list__item {
+    display: inline-block;
+    margin: 20px;
+    font-weight: bold;
+}

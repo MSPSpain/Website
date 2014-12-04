@@ -1,0 +1,13 @@
+
+@import 'font-mixins.scss';
+
+$fontDir: '../fonts/OpenSans/';
+
+@include font-face(OpenSans, '#{$fontDir}Light/OpenSans-Light', 100);
+@include font-face(OpenSans, '#{$fontDir}LightItalic/OpenSans-LightItalic', 100, italic);
+@include font-face(OpenSans, '#{$fontDir}Regular/OpenSans-Regular', normal);
+@include font-face(OpenSans, '#{$fontDir}Italic/OpenSans-Italic', normal, italic);
+@include font-face(OpenSans, '#{$fontDir}Semibold/OpenSans-Semibold', bold);
+@include font-face(OpenSans, '#{$fontDir}SemiboldItalic/OpenSans-SemiboldItalic', bold, italic);
+@include font-face(OpenSans, '#{$fontDir}Bold/OpenSans-Bold', bolder);
+@include font-face(OpenSans, '#{$fontDir}BoldItalic/OpenSans-BoldItalic', bolder, italic);

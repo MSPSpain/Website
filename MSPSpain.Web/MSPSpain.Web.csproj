@@ -92,10 +92,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\main.css" />
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
     <Content Include="Content\FakeJSON\MspJSON.txt" />
+    <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.svg" />
+    <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.svg" />
+    <Content Include="Content\fonts\OpenSans\Italic\OpenSans-Italic.svg" />
+    <Content Include="Content\fonts\OpenSans\LightItalic\OpenSans-LightItalic.svg" />
+    <Content Include="Content\fonts\OpenSans\Light\OpenSans-Light.svg" />
+    <Content Include="Content\fonts\OpenSans\Regular\OpenSans-Regular.svg" />
+    <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.svg" />
+    <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.svg" />
     <Content Include="Content\gulpfile.js" />
-    <Content Include="Content\Images\Icons\0.png" />
+    <Content Include="Content\images\Icons\0.png" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />
     <Content Include="Content\ts\Controllers\MapController.js" />
@@ -888,6 +897,37 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Content\package.json" />
+    <Content Include="Content\scss\base\index.scss" />
+    <Content Include="Content\scss\main.scss" />
+    <Content Include="Content\scss\utilities\variables.scss" />
+    <Content Include="Content\scss\base\page.scss" />
+    <Content Include="Content\scss\utilities\fonts.scss" />
+    <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.eot" />
+    <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.ttf" />
+    <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.woff" />
+    <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.eot" />
+    <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.ttf" />
+    <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.woff" />
+    <Content Include="Content\fonts\OpenSans\Italic\OpenSans-Italic.eot" />
+    <Content Include="Content\fonts\OpenSans\Italic\OpenSans-Italic.ttf" />
+    <Content Include="Content\fonts\OpenSans\Italic\OpenSans-Italic.woff" />
+    <Content Include="Content\fonts\OpenSans\LightItalic\OpenSans-LightItalic.eot" />
+    <Content Include="Content\fonts\OpenSans\LightItalic\OpenSans-LightItalic.ttf" />
+    <Content Include="Content\fonts\OpenSans\LightItalic\OpenSans-LightItalic.woff" />
+    <Content Include="Content\fonts\OpenSans\Light\OpenSans-Light.eot" />
+    <Content Include="Content\fonts\OpenSans\Light\OpenSans-Light.ttf" />
+    <Content Include="Content\fonts\OpenSans\Light\OpenSans-Light.woff" />
+    <Content Include="Content\fonts\OpenSans\Regular\OpenSans-Regular.eot" />
+    <Content Include="Content\fonts\OpenSans\Regular\OpenSans-Regular.ttf" />
+    <Content Include="Content\fonts\OpenSans\Regular\OpenSans-Regular.woff" />
+    <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.eot" />
+    <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.ttf" />
+    <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.woff" />
+    <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.eot" />
+    <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.ttf" />
+    <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.woff" />
+    <Content Include="Content\scss\utilities\reset.scss" />
+    <Content Include="Content\scss\utilities\font-mixins.scss" />
     <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
