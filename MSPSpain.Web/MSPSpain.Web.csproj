@@ -116,7 +116,6 @@
     <Content Include="Content\ts\Controllers\MspListController.js" />
     <Content Include="Content\ts\Controllers\NavigationController.js" />
     <Content Include="Content\ts\Controllers\ProjectsController.js" />
-    <Content Include="Content\ts\imports.js" />
     <Content Include="Content\Views\MainPage.html" />
     <Content Include="Content\Views\MapPage.html" />
     <Content Include="Content\Views\MspListPage.html" />
@@ -967,6 +966,11 @@
     <TypeScriptCompile Include="Content\ts\Controllers\NavigationController.ts" />
     <TypeScriptCompile Include="Content\ts\Controllers\ProjectsController.ts" />
     <TypeScriptCompile Include="Content\ts\imports.ts" />
+    <TypeScriptCompile Include="Content\ts\Interfaces\IProjectsScope.ts" />
+    <TypeScriptCompile Include="Content\ts\Interfaces\INavigationScope.ts" />
+    <TypeScriptCompile Include="Content\ts\Interfaces\IMspListScope.ts" />
+    <TypeScriptCompile Include="Content\ts\Models\Project.ts" />
+    <TypeScriptCompile Include="Content\ts\Models\User.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />

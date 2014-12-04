@@ -9,7 +9,9 @@ var Msp;
             this.$http = $http;
             // Obtain list of MSP
             $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
-                $scope.users = usersJSON;
+                for (var i = 0; i < usersJSON.length; i++) {
+                    $scope.users[i] = usersJSON;
+                }
             });
         }
         MspListController.$inject = [

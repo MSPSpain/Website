@@ -11,13 +11,15 @@ module Msp {
         ];
 
         constructor(
-            private $scope: any,
+            private $scope: IMspListScope,
             private $http: ng.IHttpService
             ) {
 
             // Obtain list of MSP
-            $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
-                $scope.users = usersJSON;
+            $http.get('/Content/FakeJSON/MspJSON.txt').success((usersJSON: any) => {
+                for (var i: number = 0; i < usersJSON.length; i++) {
+                    $scope.users[i] = <User>usersJSON;
+                }
             });
         }
     }

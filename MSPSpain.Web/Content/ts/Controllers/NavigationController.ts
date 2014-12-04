@@ -11,20 +11,19 @@ module Msp {
         ];
 
         constructor(
-            private $scope: any,
+            private $scope: INavigationScope,
             private $location: ng.ILocationService
             ) {
 
-            $scope.isActive = function (viewLocation) {
-                return viewLocation === $location.path();
-            };
-
             $scope.classActive = function (viewLocation) {
-                if ($scope.isActive(viewLocation)) {
+                if (this.isActive(viewLocation)) {
                     return 'active';
                 }
             }
+        }
 
+        isActive (viewLocation) {
+            return viewLocation === this.$location.path();
         }
     }
 } 

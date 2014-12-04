@@ -11,12 +11,14 @@ module Msp {
         ];
 
         constructor(
-            private $scope: any,
+            private $scope: IProjectsScope,
             private $http: ng.IHttpService
             ) {
 
-            $http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
-                $scope.projects = projectsJSON;
+            $http.get('/Content/FakeJSON/ProjectsJSON.txt').success((projectsJSON: any) => {
+                for (var i: number = 0; i < projectsJSON.length; i++) {
+                    $scope.projects[i] = <Project>projectsJSON;
+                }
             });
         }
     }

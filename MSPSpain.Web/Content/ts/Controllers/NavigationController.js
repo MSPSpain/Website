@@ -7,16 +7,15 @@ var Msp;
         function NavigationController($scope, $location) {
             this.$scope = $scope;
             this.$location = $location;
-            $scope.isActive = function (viewLocation) {
-                return viewLocation === $location.path();
-            };
-
             $scope.classActive = function (viewLocation) {
-                if ($scope.isActive(viewLocation)) {
+                if (this.isActive(viewLocation)) {
                     return 'active';
                 }
             };
         }
+        NavigationController.prototype.isActive = function (viewLocation) {
+            return viewLocation === this.$location.path();
+        };
         NavigationController.$inject = [
             '$scope',
             '$location'

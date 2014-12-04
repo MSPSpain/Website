@@ -8,7 +8,9 @@ var Msp;
             this.$scope = $scope;
             this.$http = $http;
             $http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
-                $scope.projects = projectsJSON;
+                for (var i = 0; i < projectsJSON.length; i++) {
+                    $scope.projects[i] = projectsJSON;
+                }
             });
         }
         ProjectsController.$inject = [
