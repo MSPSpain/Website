@@ -194,3 +194,13 @@ a, a:visited, a:hover, a:active {
 
 .page__header-main {
   background-image: url('../images/headers/stairs_original.jpg'); }
+
+.page__header-msps {
+  background-image: url('../images/headers/msps_original.jpg'); }
+
+.page__header-projects {
+  background-image: url('../images/headers/surface_original.jpg'); }
+
+.map * {
+  -webkit-transition: none;
+          transition: none; }

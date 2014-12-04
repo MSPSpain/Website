@@ -1,7 +1,18 @@
-﻿Esto es la lista de proyectos
-<ul>
-    <li ng-repeat="project in projects">
-        {{project.name}} <br />
-        <img src="{{project.images[0]}}" alt="" />
-    </li>
-</ul>
+﻿<section class="page">
+    <header class="page__header page__header-projects">
+        <div class="page__header__titles">
+            <h1>Developers, developers, developers!</h1>
+            <h3>
+                ¡Nos encanta desarrollar! Aquí te presentamos algunos de nuestros proyectos.
+            </h3>
+        </div>
+    </header>
+    <article class="page__content">
+        <ul>
+            <li ng-repeat="project in projects">
+                {{project.name}} <br />
+                <img src="{{project.images[0]}}" alt="" />
+            </li>
+        </ul>
+    </article>
+</section>   

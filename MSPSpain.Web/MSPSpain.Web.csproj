@@ -106,7 +106,10 @@
     <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.svg" />
     <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.svg" />
     <Content Include="Content\gulpfile.js" />
-    <Content Include="Content\images\Icons\0.png" />
+    <Content Include="Content\images\headers\map_original.jpg" />
+    <Content Include="Content\images\headers\msps_original.jpg" />
+    <Content Include="Content\images\headers\stairs_original.jpg" />
+    <Content Include="Content\images\headers\surface_original.jpg" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />
     <Content Include="Content\ts\Controllers\MapController.js" />
@@ -953,6 +956,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\Icons\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -994,7 +998,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58064</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

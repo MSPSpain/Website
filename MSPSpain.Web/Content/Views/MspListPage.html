@@ -1,8 +1,20 @@
-﻿Esto es la lista de msp
-<ul>
-    <li ng-repeat="user in users">
-        {{user.name}} {{user.lastname}} <br />
-        {{user.city}} <br />
-        {{user.website}}
-    </li>
-</ul>
+﻿<section class="page">
+    <header class="page__header page__header-msps">
+        <div class="page__header__titles">
+            <h1>Estos somos nosotros</h1>
+            <h3>
+                Y a ti.. ¿Que tecnología te gusta? 
+                Explora la lista de integrantes, también nos puedes invitar a dar una charla.
+            </h3>
+        </div>
+    </header>
+    <article class="page__content">
+        <ul>
+            <li ng-repeat="user in users">
+                {{user.name}} {{user.lastname}} <br />
+                {{user.city}} <br />
+                {{user.website}}
+            </li>
+        </ul>
+    </article>
+</section>   
