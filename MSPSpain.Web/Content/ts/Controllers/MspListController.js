@@ -7,6 +7,7 @@ var Msp;
         function MspListController($scope, $http) {
             this.$scope = $scope;
             this.$http = $http;
+            // Obtain list of MSP
             $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
                 $scope.users = usersJSON;
             });

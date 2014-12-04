@@ -3,10 +3,7 @@
 module Msp {
     'use strict';
 
-    var root = function (page) {
-        return 'Content/' + page;
-    };
-
+    // App configuration object
     export var config = {
         api: {
             //baseUrl: <string> 'https://photochat.luisguerrero.net/api/user/',
@@ -15,6 +12,7 @@ module Msp {
         viewsPath: '/Content/Views/'
     }
 
+    // Angular App
     angular.module('Msp', ['ngRoute'])
         .controller('navigationController', Msp.NavigationController)
         .controller('mainController', Msp.MainController)
@@ -23,7 +21,7 @@ module Msp {
         .controller('projectsController', Msp.ProjectsController)
         .config(['$routeProvider', routes]);
 
-
+    // Router configuration
     function routes($routeProvider: ng.route.IRouteProvider) {
         $routeProvider
             .when('/', {
