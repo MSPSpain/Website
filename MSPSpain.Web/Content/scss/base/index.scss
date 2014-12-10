@@ -65,3 +65,9 @@ a, a:visited, a:hover, a:active {
     margin: 20px;
     font-weight: bold;
 }
+
+input {
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.1);
+}

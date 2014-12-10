@@ -7,12 +7,18 @@ var Msp;
         function ProjectsController($scope, $http) {
             this.$scope = $scope;
             this.$http = $http;
-            $http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
+            this.projects = [];
+            this.getMspList();
+            $scope.projects = this.projects;
+        }
+        ProjectsController.prototype.getMspList = function () {
+            var _this = this;
+            this.$http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
                 for (var i = 0; i < projectsJSON.length; i++) {
-                    $scope.projects[i] = projectsJSON;
+                    _this.projects[i] = projectsJSON[i];
                 }
             });
-        }
+        };
         ProjectsController.$inject = [
             '$scope',
             '$http'

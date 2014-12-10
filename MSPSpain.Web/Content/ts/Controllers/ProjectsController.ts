@@ -5,6 +5,8 @@ module Msp {
 
     export class ProjectsController {
 
+        private projects: Array<Project> = [];
+
         public static $inject = [
             '$scope',
             '$http'
@@ -15,9 +17,14 @@ module Msp {
             private $http: ng.IHttpService
             ) {
 
-            $http.get('/Content/FakeJSON/ProjectsJSON.txt').success((projectsJSON: any) => {
+            this.getMspList();
+            $scope.projects = this.projects;
+        }
+
+        getMspList() {
+            this.$http.get('/Content/FakeJSON/ProjectsJSON.txt').success((projectsJSON: any) => {
                 for (var i: number = 0; i < projectsJSON.length; i++) {
-                    $scope.projects[i] = <Project>projectsJSON;
+                    this.projects[i] = <Project>projectsJSON[i];
                 }
             });
         }

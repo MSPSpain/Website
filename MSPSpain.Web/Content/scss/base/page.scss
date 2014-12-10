@@ -66,6 +66,9 @@ $header-height-tablet-subs: 200px;
     background-image: url('../images/headers/surface_original.jpg');
 }
 
+.page__content {
+    max-width: 1200px;
+}
 
 .map {
     * {
@@ -73,4 +76,54 @@ $header-height-tablet-subs: 200px;
     }
 }
 
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    box-direction: normal;
+    box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-pack: start;
+    justify-content: flex-start;
+    flex-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    box-align: start;
+    flex-align: start;
+    align-items: flex-start;
+
+}
+
+.flex__item {
+    ordinal-group: 1;
+    order: 0;
+    flex-order: 0;
+    order: 0;
+    box-flex: 0;
+    box-flex: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    flex-item-align: auto;
+    align-self: auto;
+}
+
+.tags_box {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    display: table;
+}
+
+.tags_box__tags {
+    width: 80%;
+    height: 50px;
+    display: table-cell;
+}
+
+.tags_box__search {
+    width: 19%;
+    height: 50px;
+    display: table-cell;
+    padding: 7px;
+}
 

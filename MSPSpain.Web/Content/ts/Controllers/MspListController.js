@@ -7,13 +7,18 @@ var Msp;
         function MspListController($scope, $http) {
             this.$scope = $scope;
             this.$http = $http;
-            // Obtain list of MSP
-            $http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
+            this.users = [];
+            this.getMspList();
+            $scope.users = this.users;
+        }
+        MspListController.prototype.getMspList = function () {
+            var _this = this;
+            this.$http.get('/Content/FakeJSON/MspJSON.txt').success(function (usersJSON) {
                 for (var i = 0; i < usersJSON.length; i++) {
-                    $scope.users[i] = usersJSON;
+                    _this.users[i] = usersJSON[i];
                 }
             });
-        }
+        };
         MspListController.$inject = [
             '$scope',
             '$http'

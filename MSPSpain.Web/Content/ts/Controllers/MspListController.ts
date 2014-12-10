@@ -5,6 +5,8 @@ module Msp {
 
     export class MspListController {
 
+        private users: Array<User> = [];
+
         public static $inject = [
             '$scope',
             '$http'
@@ -15,10 +17,14 @@ module Msp {
             private $http: ng.IHttpService
             ) {
 
-            // Obtain list of MSP
-            $http.get('/Content/FakeJSON/MspJSON.txt').success((usersJSON: any) => {
+            this.getMspList();
+            $scope.users = this.users;          
+        }
+
+        getMspList() {
+            this.$http.get('/Content/FakeJSON/MspJSON.txt').success((usersJSON: any) => {
                 for (var i: number = 0; i < usersJSON.length; i++) {
-                    $scope.users[i] = <User>usersJSON;
+                    this.users[i] = <User>usersJSON[i];
                 }
             });
         }

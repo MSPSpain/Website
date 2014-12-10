@@ -12,10 +12,10 @@ var Msp;
                     return 'active';
                 }
             };
+            $scope.isActive = function (viewLocation) {
+                return viewLocation === $location.path();
+            };
         }
-        NavigationController.prototype.isActive = function (viewLocation) {
-            return viewLocation === this.$location.path();
-        };
         NavigationController.$inject = [
             '$scope',
             '$location'

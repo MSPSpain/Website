@@ -20,10 +20,11 @@ module Msp {
                     return 'active';
                 }
             }
+            $scope.isActive = function(viewLocation) {
+                return viewLocation === $location.path();
+            }
         }
 
-        isActive (viewLocation) {
-            return viewLocation === this.$location.path();
-        }
+        
     }
 } 

@@ -97,6 +97,7 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
     <Content Include="Content\FakeJSON\MspJSON.txt" />
+    <Content Include="Content\fonts\Icomoon\icomoon.svg" />
     <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.svg" />
     <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.svg" />
     <Content Include="Content\fonts\OpenSans\Italic\OpenSans-Italic.svg" />
@@ -932,6 +933,11 @@
     <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.woff" />
     <Content Include="Content\scss\utilities\reset.scss" />
     <Content Include="Content\scss\utilities\font-mixins.scss" />
+    <Content Include="Content\scss\base\msplist.scss" />
+    <Content Include="Content\fonts\Icomoon\icomoon.eot" />
+    <Content Include="Content\fonts\Icomoon\icomoon.ttf" />
+    <Content Include="Content\fonts\Icomoon\icomoon.woff" />
+    <Content Include="Content\fonts\Icomoon\selection.json" />
     <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

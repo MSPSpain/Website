@@ -8,13 +8,29 @@
             </h3>
         </div>
     </header>
-    <article class="page__content">
-        <ul>
-            <li ng-repeat="user in users">
-                {{user.name}} {{user.lastname}} <br />
-                {{user.city}} <br />
-                {{user.website}}
-            </li>
-        </ul>
+    <article class="page__content page__content-msp">
+
+        <div class="tags_box">
+            <div class="tags_box__tags"></div>
+            <div class="tags_box__search">
+                <input type="text" placeholder="Filtrar por" ng-model="searchText" />
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="flex__item user" ng-repeat="user in users | orderBy:'lastname' | filter:searchText">
+                <img src="{{user.image}}" class="user__image" />
+                <div class="user__info">
+                    <h3 class="user__info__item user__info__item-name">{{user.name}} {{user.lastname}}</h3>
+                    <a href="http://twitter.com/{{user.twitter}}" target="_blank" class="user__info__item user__info__item-twitter icon-twitter">{{user.twitter}}</a>
+                    <a href="mailto:{{user.email}}" class="user__info__item user__info__item-email icon-bubble">
+                        {{user.email}}
+                    </a>
+                    <span class="user__info__item user__info__item-location user-hidden icon-location">{{user.university}}, {{user.city}}</span>
+                    <span class="user__info__item user__info__item-skills user-hidden icon-lightning">{{user.skills}}</span>
+                    <a href="http://linkedin.com/in/{{user.linkedin}}" target="_blank" class="user__info__item user__info__item-linkedin user-hidden icon-linkedin">{{user.linkedin}}</a>
+                </div>
+            </div>
+        </div>
     </article>
 </section>   
