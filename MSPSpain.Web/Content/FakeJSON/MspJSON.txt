@@ -145,5 +145,26 @@
 			"lon": 39.583683,
 			"lat": 2.656207
 		}
+	},
+	
+	{
+		"id": 8,
+		"msp": true,
+		"name": "Diego",
+		"lastname": "Martínez Gil",
+		"years": [2012, 2013, 2014],
+		"city": "Guadalajara",
+		"university": "Universidad de Alcalá",
+		"email": "diego.martinez@studentpartner.com",
+		"skills": "Windows 8, Windows Phone ",
+		"twitter": "diegomrtnzg",
+		"linkedin": "diegomrtnzg",
+		"website": "http://diegomartinez.azurewebsites.net/",
+		"image": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_400x400.jpeg",
+		"thumbnail": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_400x400.jpeg",
+		"location": {
+			"lon": 40.63,
+			"lat": -3.17,
+		}
 	}
 ]
