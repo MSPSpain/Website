@@ -251,5 +251,27 @@
             "lon": 40.4072622,
             "lat": -3.6362286
         }
+    },
+		    {
+        "id": 12,
+        "msp": true,
+        "name": "Gregorio",
+        "lastname": "Juliana Quirós",
+        "years": [
+            2014
+        ],
+        "city": "Madrid",
+        "university": "UPM",
+        "email": "gregojquiros@ieee.org",
+        "skills": "C#, Java, Apps, Robots",
+        "twitter": "GregUndercover",
+        "linkedin": "",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/378800000850784677/2148a3fd269b73420c42a6fb51dc3105.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/378800000850784677/2148a3fd269b73420c42a6fb51dc3105_bigger.jpeg",
+        "location": {
+            "lon": 40.4438641,
+            "lat": -3.6964803
+        }
     }
 ]
