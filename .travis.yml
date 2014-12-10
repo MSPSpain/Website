@@ -1,2 +1,4 @@
 language: csharp
 solution: MSPSpain.sln
+script:
+  - .ci/nunit.sh MSPSpain.Tests/bin/Debug/Tests.dll
