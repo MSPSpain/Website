@@ -166,5 +166,26 @@
 			"lon": 40.63,
 			"lat": -3.17,
 		}
+	},
+	
+	{
+		"id": 9,
+		"msp": true,
+		"name": "Sergio",
+		"lastname": "Gallardo Sales",
+		"years": [2014],
+		"city": "Elche",
+		"university": "Universidad de Alicante",
+		"email": "maktub82dev@outlook.com",
+		"skills": "Windows 8, Windows Phone, C#",
+		"twitter": "maktub82",
+		"linkedin": "sergiogallardosales",
+		"website": "http://www.maktub82.com/",
+		"image": "https://media.licdn.com/media/p/3/005/01b/0ec/0813ae5.jpg",
+		"thumbnail": "https://media.licdn.com/media/p/3/005/01b/0ec/0813ae5.jpg",
+		"location": {
+			"lon": 40,26,
+			"lat": 3.41,
+		}
 	}
 ]
