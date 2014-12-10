@@ -1,5 +1,4 @@
 language: csharp
 solution: MSPSpain.sln
 script:
-  - xbuild MSPSpain.Tests/MSPSpain.Tests.csproj
-  - nunit-console MSPSpain.Tests/bin/Debug/Tests.dll
+  - mono --runtime=v4.0 packages/NUnit.Runners.2.6.1/tools/nunit-console.exe -noxml -nodots -labels -stoponerror MSPSpain.Tests/bin/Debug/Tests.dll
