@@ -61,12 +61,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MSPSpain.Web\MSPSpain.Web.csproj">
-      <Project>{168d2126-33e8-471b-80d2-4597dd69a522}</Project>
-      <Name>MSPSpain.Web</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>

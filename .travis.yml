@@ -1,5 +1,5 @@
 language: csharp
-solution: OptionType.sln
+solution: MSPSpain.sln
 install:
   - sudo apt-get install mono-devel mono-gmcs nunit-console
 script:
