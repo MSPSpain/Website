@@ -2,6 +2,7 @@
 using System.IO;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Linq;
+
 #if NUNIT
 using TestClass = NUnit.Framework.TestFixtureAttribute;
 using TestMethod = NUnit.Framework.TestAttribute;
@@ -13,7 +14,6 @@ using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 #else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 #endif
-
 
 namespace MSPSpain.Tests
 {
