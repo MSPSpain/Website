@@ -272,7 +272,7 @@
         "linkedin": "gorka-madariaga-núñez",
         "website": "http://alwaysontime.azurewebsites.net/",
         "image": "https://pbs.twimg.com/profile_images/417839163317047296/ZMDJ-EBL.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/417839163317047296/ZMDJ-EBL.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/417839163317047296/ZMDJ-EBL_normal.jpeg",
         "location": {
             "lon": 40.416919,
             "lat": -3.707689
