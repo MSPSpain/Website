@@ -3,4 +3,4 @@ solution: OptionType.sln
 install:
   - sudo apt-get install mono-devel mono-gmcs nunit-console
 script:
-  - nunit-console MSPSpain.Tests/bin/Debug/Tests.dll
+  - nunit-console MSPSpain.Tests/bin/Debug/MSPSpain.Tests.dll 
