@@ -15,11 +15,15 @@ using Assert = NUnit.Framework.Assert;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 #endif
 
+// Remember if you do any change here, build this project in DebugNuint and push dll
+
 namespace MSPSpain.Tests
 {
     [TestClass]
     public class Frontend
     {
+        string path = "../../../MSPSpain.Web/Content/FakeJSON/";
+
         [TestMethod]
         public void MspJson()
         {
@@ -46,7 +50,29 @@ namespace MSPSpain.Tests
                 }
             }");
 
-            string json = File.ReadAllText("../../../MSPSpain.Web/Content/FakeJSON/MspJSON.txt");
+            string json = File.ReadAllText(path + "MspJSON.txt");
+            JArray person = JArray.Parse(json);
+
+            bool valid = person.IsValid(schema);
+            Assert.IsTrue(valid);
+
+        }
+
+        [TestMethod]
+        public void QuotesJson()
+        {
+            JsonSchema schema = JsonSchema.Parse(@"{
+                'type': 'array',
+                'items': {
+                    'type': 'object',
+                    'properties': {
+                        'id': {'type':'number'},
+                        'quote': {'type':'string'}
+                    }
+                }
+            }");
+
+            string json = File.ReadAllText(path + "QuotesJSON.txt");
             JArray person = JArray.Parse(json);
 
             bool valid = person.IsValid(schema);

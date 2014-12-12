@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\FakeJSON\QuotesJSON.txt" />
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
     <Content Include="Content\FakeJSON\MspJSON.txt" />
     <Content Include="Content\fonts\Icomoon\icomoon.svg" />
@@ -972,10 +973,12 @@
     <TypeScriptCompile Include="Content\ts\Controllers\NavigationController.ts" />
     <TypeScriptCompile Include="Content\ts\Controllers\ProjectsController.ts" />
     <TypeScriptCompile Include="Content\ts\imports.ts" />
+    <TypeScriptCompile Include="Content\ts\Interfaces\IMainScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\IProjectsScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\INavigationScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\IMspListScope.ts" />
     <TypeScriptCompile Include="Content\ts\Models\Project.ts" />
+    <TypeScriptCompile Include="Content\ts\Models\Quote.ts" />
     <TypeScriptCompile Include="Content\ts\Models\User.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
