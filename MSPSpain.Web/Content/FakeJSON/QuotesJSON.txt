@@ -1,0 +1,6 @@
+﻿[
+    {
+        "id": 1,
+        "quote": "cuando la tecnología se convierte en absoluta pasión."
+    }
+]
