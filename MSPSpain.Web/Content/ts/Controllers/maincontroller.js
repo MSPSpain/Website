@@ -38,4 +38,4 @@ var Msp;
     })();
     Msp.MainController = MainController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=maincontroller.js.map
+//# sourceMappingURL=MainController.js.map

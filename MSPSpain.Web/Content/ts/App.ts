@@ -13,7 +13,7 @@ module Msp {
     }
 
     // Angular App
-    angular.module('Msp', ['ngRoute'])
+    angular.module('Msp', ['ngRoute', 'githubRepo'])
         .controller('navigationController', Msp.NavigationController)
         .controller('mainController', Msp.MainController)
         .controller('mapController', Msp.MapController)

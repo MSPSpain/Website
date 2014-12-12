@@ -108,6 +108,7 @@
     <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.svg" />
     <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.svg" />
     <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\images\calendar.jpg" />
     <Content Include="Content\images\headers\map_original.jpg" />
     <Content Include="Content\images\headers\msps_original.jpg" />
     <Content Include="Content\images\headers\stairs_original.jpg" />
@@ -130,6 +131,9 @@
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-csp.css" />
+    <Content Include="Scripts\angular-github-repo-master\angular-github-repo.js" />
+    <Content Include="Scripts\angular-github-repo-master\assets\base.css" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.svg" />
     <Content Include="Scripts\angular-loader.js" />
     <Content Include="Scripts\angular-loader.min.js" />
     <Content Include="Scripts\angular-messages.js" />
@@ -939,6 +943,9 @@
     <Content Include="Content\fonts\Icomoon\icomoon.ttf" />
     <Content Include="Content\fonts\Icomoon\icomoon.woff" />
     <Content Include="Content\fonts\Icomoon\selection.json" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.eot" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.ttf" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.woff" />
     <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

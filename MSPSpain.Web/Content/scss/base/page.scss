@@ -66,8 +66,21 @@ $header-height-tablet-subs: 200px;
     background-image: url('../images/headers/surface_original.jpg');
 }
 
-.page__content {
+.page__content__centered {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page h2 {
+    font-weight: bold;
+    font-size: 2.3em;
+    margin: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.github-title {
+    margin-bottom: -3% !important;
 }
 
 .map {
