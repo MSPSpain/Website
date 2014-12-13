@@ -294,4 +294,25 @@
 			"lat": -3.692058
 		}
 	}
+    },
+    	{
+		"id": 14,
+		"msp": true,
+		"name": "Jose Manuel",
+		"lastname": "Montero Ortega",
+		"years": [2013 , 2014],
+		"city": "Jerez la Frontera",
+		"university": "Universidad de Cadiz",
+		"email": "jmmontero.ortega@gmail.com",
+		"skills": "C, Windows 8, Windows Phone, C#, Scala, Xamarin ",
+		"twitter": "josemmortega",
+		"linkedin": "José Manuel Montero Ortega",
+		"website": "http://devthisblog.namocode.es",
+		"image": "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/264539_10200972023560723_910692366_n.jpg?oh=b6b092a179ac40d4a39e8ac0b22b0ebb&oe=550AACD8&__gda__=1426774844_2bbc4cb2a5ea1b3bd1fd64acb2e0be47",
+		"thumbnail": "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/264539_10200972023560723_910692366_n.jpg?oh=b6b092a179ac40d4a39e8ac0b22b0ebb&oe=550AACD8&__gda__=1426774844_2bbc4cb2a5ea1b3bd1fd64acb2e0be47",
+		"location": {
+			"lon": 36.6876057,
+			"lat": -6.1229854
+		}
+	}
 ]
