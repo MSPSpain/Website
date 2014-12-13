@@ -281,7 +281,7 @@
 		"lastname": "Garcia Salvadores",
 		"years": [2014],
 		"city": "Madrid",
-		"university": "Universidad Autonoma de Madrid,
+		"university": "Universidad Autonoma de Madrid",
 		"email": "arcadio.garcia@studentpartner.com",
 		"skills": "Javascript, C, Windows 8, Windows Phone ",
 		"twitter": "arcadio_g_s",
