@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id": 1,
         "msp": true,
@@ -273,25 +273,5 @@
             "lon": 40.4438641,
             "lat": -3.6964803
         }
-    },
-	{
-		"id": 13,
-		"msp": true,
-		"name": "Arcadio",
-		"lastname": "Garcia Salvadores",
-		"years": [2014],
-		"city": "Madrid",
-		"university": "Universidad Autonoma de Madrid",
-		"email": "arcadio.garcia@studentpartner.com",
-		"skills": "Javascript, C, Windows 8, Windows Phone ",
-		"twitter": "arcadio_g_s",
-		"linkedin": "arcadiogarcia",
-		"website": "coming soon?",
-		"image": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400.jpeg",
-		"thumbnail": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400_normal.jpeg",
-		"location": {
-			"lon": 40.547067,
-			"lat": -3.692058
-		}
-	}
+    }
 ]
