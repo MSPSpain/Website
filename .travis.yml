@@ -1,6 +1,8 @@
 language: csharp
 solution: MSPSpain.sln
 install:
-  - sudo apt-get install mono-devel mono-gmcs nunit-console
+  - sudo apt-get install nunit-console
+  - nuget restore MSPSpain.sln
 script:
+  - xbuild /p:Configuration=DebugNUnit MSPSpain.sln
   - nunit-console MSPSpain.Tests/bin/DebugNUnit/MSPSpain.Tests.dll 
