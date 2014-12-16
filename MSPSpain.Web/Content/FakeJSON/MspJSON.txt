@@ -288,7 +288,7 @@
         "skills": "Javascript, C, Windows 8, Windows Phone ",
         "twitter": "arcadio_g_s",
         "linkedin": "arcadiogarcia",
-        "website": "coming soon?",
+        "website": "",
         "image": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400.jpeg",
         "thumbnail": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400_normal.jpeg",
         "location": {
