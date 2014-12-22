@@ -317,6 +317,27 @@
         "location": {
             "lon": 43.42975,
             "lat": -3.927352
+        },
+    {
+        "id": 15,
+        "msp": true,
+        "name": "Manuel",
+        "lastname": "Sánchez Rodríguez",
+        "years": [
+            2014
+        ],
+        "city": "Málaga",
+        "university": "UNED",
+        "email": "manuel.sanchez@studentpartner.com",
+        "skills": "Aplicaciones Web, C#, Arduino, Apps",
+        "twitter": "Manuss20",
+        "linkedin": "manuelsanchezrodriguez",
+        "website": "http://manusrodrig.com",
+        "image": "https://pbs.twimg.com/profile_images/3343054806/448806c8205bf5fafa1f0f0f41b61eb8_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/3343054806/448806c8205bf5fafa1f0f0f41b61eb8_400x400.jpeg",
+        "location": {
+            "lon": -4.47244,
+            "lat": 36.71696
         }
     }
 ]
