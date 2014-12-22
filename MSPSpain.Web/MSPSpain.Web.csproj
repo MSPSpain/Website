@@ -946,7 +946,7 @@
     <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.eot" />
     <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.ttf" />
     <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.woff" />
-    <None Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
