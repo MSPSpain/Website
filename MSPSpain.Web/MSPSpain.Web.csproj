@@ -69,16 +69,16 @@
       <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Helpers">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\FakeJSON\QuotesJSON.txt" />
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
     <Content Include="Content\FakeJSON\MspJSON.txt" />
     <Content Include="Content\fonts\Icomoon\icomoon.svg" />
@@ -107,6 +108,7 @@
     <Content Include="Content\fonts\OpenSans\SemiboldItalic\OpenSans-SemiboldItalic.svg" />
     <Content Include="Content\fonts\OpenSans\Semibold\OpenSans-Semibold.svg" />
     <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\images\calendar.jpg" />
     <Content Include="Content\images\headers\map_original.jpg" />
     <Content Include="Content\images\headers\msps_original.jpg" />
     <Content Include="Content\images\headers\stairs_original.jpg" />
@@ -129,6 +131,9 @@
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-csp.css" />
+    <Content Include="Scripts\angular-github-repo-master\angular-github-repo.js" />
+    <Content Include="Scripts\angular-github-repo-master\assets\base.css" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.svg" />
     <Content Include="Scripts\angular-loader.js" />
     <Content Include="Scripts\angular-loader.min.js" />
     <Content Include="Scripts\angular-messages.js" />
@@ -938,7 +943,10 @@
     <Content Include="Content\fonts\Icomoon\icomoon.ttf" />
     <Content Include="Content\fonts\Icomoon\icomoon.woff" />
     <Content Include="Content\fonts\Icomoon\selection.json" />
-    <None Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.eot" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.ttf" />
+    <Content Include="Scripts\angular-github-repo-master\assets\Entypo-webfont.woff" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -972,10 +980,12 @@
     <TypeScriptCompile Include="Content\ts\Controllers\NavigationController.ts" />
     <TypeScriptCompile Include="Content\ts\Controllers\ProjectsController.ts" />
     <TypeScriptCompile Include="Content\ts\imports.ts" />
+    <TypeScriptCompile Include="Content\ts\Interfaces\IMainScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\IProjectsScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\INavigationScope.ts" />
     <TypeScriptCompile Include="Content\ts\Interfaces\IMspListScope.ts" />
     <TypeScriptCompile Include="Content\ts\Models\Project.ts" />
+    <TypeScriptCompile Include="Content\ts\Models\Quote.ts" />
     <TypeScriptCompile Include="Content\ts\Models\User.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

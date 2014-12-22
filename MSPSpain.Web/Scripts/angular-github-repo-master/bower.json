@@ -1,0 +1,27 @@
+{
+  "name": "angular-github-repo",
+  "version": "0.3.6",
+  "homepage": "https://github.com/lucasconstantino/angular-github-repo",
+  "authors": [
+    "Lucas Constantino <lucasconstantinosilva@gmail.com>"
+  ],
+  "description": "A GitHub repository widget directive for AngularJS",
+  "main": "angular-github-repo.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "github",
+    "repository"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  }
+}

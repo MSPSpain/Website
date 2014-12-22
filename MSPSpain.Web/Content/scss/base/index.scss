@@ -1,5 +1,6 @@
 ﻿@import '../utilities/variables';
 
+
 body, html {
     background: $Color-Background-dimmed;
     height: 100%;
@@ -13,6 +14,11 @@ body, html {
     @media screen and (max-width: $Size-Window-tablet) {
         font-size: 14px;
     }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a, a:visited, a:hover, a:active {
@@ -70,4 +76,29 @@ input {
     padding: 10px;
     border-radius: 2px;
     border: 1px solid rgba(0,0,0,0.1);
+}
+
+.quote {
+    background: $Color-Background-dark;
+    color: $Color-Foreground-light;
+    font-size: 3em;
+    min-height: 200px;
+    padding: 5%;
+    width: 100%;
+}
+
+.repos {
+    text-align: center;
+    padding: 5% 0% 3% 0%;
+}
+
+.repos__item {
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+
+
+    .github-box {
+        height: 112px;
+    }
 }

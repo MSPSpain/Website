@@ -1,3 +1,4 @@
+@import url('../../Scripts/angular-github-repo-master/assets/base.css');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -132,7 +133,7 @@ table {
 .icon-twitter:before {
   content: "\e604"; }
 
-.icon-github:before {
+.icon-git:before {
   content: "\e605"; }
 
 .icon-linkedin:before {
@@ -150,6 +151,10 @@ body, html {
   @media screen and (max-width: 832px) {
     body, html {
       font-size: 14px; } }
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 a, a:visited, a:hover, a:active {
   color: #0792fc;
@@ -196,6 +201,25 @@ input {
   padding: 10px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.quote {
+  background: #221D15;
+  color: #FFFFFF;
+  font-size: 3em;
+  min-height: 200px;
+  padding: 5%;
+  width: 100%; }
+
+.repos {
+  text-align: center;
+  padding: 5% 0% 3% 0%; }
+
+.repos__item {
+  display: inline-block;
+  margin: 10px;
+  width: 20%; }
+  .repos__item .github-box {
+    height: 112px; }
 
 .page {
   width: 100%;
@@ -248,8 +272,19 @@ input {
 .page__header-projects {
   background-image: url('../images/headers/surface_original.jpg'); }
 
-.page__content {
-  max-width: 1200px; }
+.page__content__centered {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.page h2 {
+  font-weight: bold;
+  font-size: 2.3em;
+  margin: 2%;
+  width: 100%;
+  text-align: center; }
+
+.github-title {
+  margin-bottom: -3% !important; }
 
 .map * {
   -webkit-transition: none;

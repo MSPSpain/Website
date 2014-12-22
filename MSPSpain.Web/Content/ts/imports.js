@@ -7,10 +7,12 @@
 // Models
 /// <reference path="models/user.ts" />
 /// <reference path="models/project.ts" />
+/// <reference path="models/quote.ts" />
 // Interfaces
 /// <reference path="interfaces/imsplistscope.ts" />
 /// <reference path="interfaces/inavigationscope.ts" />
 /// <reference path="interfaces/iprojectsscope.ts" />
+/// <reference path="interfaces/imainscope.ts" />
 // Controllers
 /// <reference path="controllers/maincontroller.ts" />
 /// <reference path="controllers/mapcontroller.ts" />
