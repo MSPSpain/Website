@@ -10,17 +10,41 @@ namespace MSPSpain.Repository
     {
         public Task<IQueryable<Msp>> GetByCity(string city)
         {
-            return Task.FromResult<IQueryable<Msp>>(new List<Msp>(3).AsQueryable());
+            return Task.FromResult<IQueryable<Msp>>(new List<Msp>
+            {
+                new Msp
+                {
+                    Name = "Daniel",
+                    Lastname  = "Rozo"
+                }
+            }
+            .AsQueryable());
         }
 
         public Task<IQueryable<Msp>> GetByUniversity(string university)
         {
-            return Task.FromResult<IQueryable<Msp>>(new List<Msp>(3).AsQueryable());
+            return Task.FromResult<IQueryable<Msp>>(new List<Msp>
+            {
+                new Msp
+                {
+                    Name = "Daniel",
+                    Lastname  = "Rozo"
+                }
+            }
+            .AsQueryable());
         }
 
         public Task<IQueryable<Msp>> GetMsps()
         {
-            return Task.FromResult<IQueryable<Msp>>(new List<Msp>(3).AsQueryable());
+            return Task.FromResult<IQueryable<Msp>>(new List<Msp>
+            {
+                new Msp
+                {
+                    Name = "Daniel",
+                    Lastname  = "Rozo"
+                }
+            }
+            .AsQueryable());
         }
     }
 }

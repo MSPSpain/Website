@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var User = (function () {
         function User() {
         }
@@ -10,4 +9,4 @@ var Msp;
     })();
     Msp.User = User;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=User.js.map
+//# sourceMappingURL=user.js.map
