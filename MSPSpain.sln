@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C9E3BA54-8A74-4CCE-A864-B4662C1ED207}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPSpain.Web", "MSPSpain.Web\MSPSpain.Web.csproj", "{168D2126-33E8-471B-80D2-4597DD69A522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPSpain.Tests", "MSPSpain.Tests\MSPSpain.Tests.csproj", "{D420562B-77AE-43D9-9DCF-C7468B18573E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPSpain.Web.Tests", "MSPSpain.Tests\MSPSpain.Web.Tests.csproj", "{D420562B-77AE-43D9-9DCF-C7468B18573E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPSpain", "MSPSpain\MSPSpain.csproj", "{235DD38C-7F0F-4F42-A250-1AB793D23AD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,12 @@ Global
 		{D420562B-77AE-43D9-9DCF-C7468B18573E}.DebugNUnit|Any CPU.Build.0 = DebugNUnit|Any CPU
 		{D420562B-77AE-43D9-9DCF-C7468B18573E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D420562B-77AE-43D9-9DCF-C7468B18573E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.DebugNUnit|Any CPU.ActiveCfg = Debug|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.DebugNUnit|Any CPU.Build.0 = Debug|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +43,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{168D2126-33E8-471B-80D2-4597DD69A522} = {C9E3BA54-8A74-4CCE-A864-B4662C1ED207}
 		{D420562B-77AE-43D9-9DCF-C7468B18573E} = {C9E3BA54-8A74-4CCE-A864-B4662C1ED207}
+		{235DD38C-7F0F-4F42-A250-1AB793D23AD6} = {C9E3BA54-8A74-4CCE-A864-B4662C1ED207}
 	EndGlobalSection
 EndGlobal
