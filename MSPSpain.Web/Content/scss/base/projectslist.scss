@@ -1,0 +1,70 @@
+﻿@import '../utilities/variables';
+
+.page__content-project {
+    width: 80%;
+    margin: 0 auto;
+}
+
+$delay: 0.5s;
+.project {
+    background: $Color-Background-light;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 230px;
+    cursor: pointer;
+    transition-delay: $delay;
+
+    &:active, &:hover{
+        width: 400px;
+        height: 350px;
+        transition-delay: $delay;
+
+        .project-hidden {
+            transition-delay: $delay;
+            opacity: 1;
+            overflow: visible;
+            white-space: normal;
+        }
+    }
+    a, a:visited {
+        color: $Color-Foreground-dark;
+    }
+
+    a:hover, a:active {
+        color: $Color-Brand-main;
+    }
+}
+
+.project__image {
+    width: 100%;
+    max-height: 214px;
+    margin: 5px auto;
+    margin-bottom: 15px;
+    display: block;
+    transition-delay: $delay;
+}
+
+.project__info__item {
+    display: block;
+    margin: 5px;
+    margin-top: -5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    min-height: 18px;
+}
+
+.project__info__item-name {
+    font-weight: bold;
+    font-size: 1.02em;
+    margin-bottom: 10px;
+}
+
+
+.project-hidden {
+    transition-delay: $delay;
+    opacity: 0;
+}

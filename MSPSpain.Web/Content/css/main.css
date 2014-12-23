@@ -306,10 +306,10 @@ input {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   box-pack: start;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   flex-pack: start;
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
@@ -419,6 +419,65 @@ input {
   margin-bottom: 10px; }
 
 .user-hidden {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  opacity: 0; }
+
+.page__content-project {
+  width: 80%;
+  margin: 0 auto; }
+
+.project {
+  background: #FFFFFF;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px;
+  height: 230px;
+  cursor: pointer;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
+  .project:active, .project:hover {
+    width: 400px;
+    height: 350px;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s; }
+    .project:active .project-hidden, .project:hover .project-hidden {
+      -webkit-transition-delay: 0.5s;
+              transition-delay: 0.5s;
+      opacity: 1;
+      overflow: visible;
+      white-space: normal; }
+  .project a, .project a:visited {
+    color: #000000; }
+  .project a:hover, .project a:active {
+    color: #EE8702; }
+
+.project__image {
+  width: 100%;
+  max-height: 214px;
+  margin: 5px auto;
+  margin-bottom: 15px;
+  display: block;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
+
+.project__info__item {
+  display: block;
+  margin: 5px;
+  margin-top: -5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  min-height: 18px; }
+
+.project__info__item-name {
+  font-weight: bold;
+  font-size: 1.02em;
+  margin-bottom: 10px; }
+
+.project-hidden {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   opacity: 0; }
