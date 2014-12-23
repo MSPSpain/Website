@@ -9,4 +9,4 @@ var Msp;
     })();
     Msp.User = User;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=User.js.map

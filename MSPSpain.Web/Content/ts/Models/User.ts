@@ -6,7 +6,7 @@ module Msp {
     export class User {
 
         public id: number;
-        public msp: boolean;
+        public isMsp: boolean;
         public name: string;
         public lastname: string;
         public years: number[];
