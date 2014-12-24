@@ -334,7 +334,7 @@
         "linkedin": "manuelsanchezrodriguez",
         "website": "http://manusrodrig.com",
         "image": "https://pbs.twimg.com/profile_images/3343054806/448806c8205bf5fafa1f0f0f41b61eb8_400x400.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/3343054806/448806c8205bf5fafa1f0f0f41b61eb8_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/3343054806/448806c8205bf5fafa1f0f0f41b61eb8_bigger.jpeg",
         "location": {
             "lon": -4.47244,
             "lat": 36.71696
