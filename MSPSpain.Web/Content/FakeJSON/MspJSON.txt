@@ -177,9 +177,9 @@
         "skills": "Windows 8, Windows Phone ",
         "twitter": "diegomrtnzg",
         "linkedin": "diegomrtnzg",
-        "website": "http://diegomartinez.azurewebsites.net/",
-        "image": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw_400x400.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw_400x400.jpeg",
+        "website": "http://diegomrtnzg.azurewebsites.net/",
+        "image": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw_normal.jpeg",
         "location": {
             "lon": 40.63,
             "lat": -3.17
