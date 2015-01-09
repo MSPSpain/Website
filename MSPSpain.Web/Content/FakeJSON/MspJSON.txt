@@ -318,5 +318,29 @@
             "lon": 43.42975,
             "lat": -3.927352
         }
+    },
+    {
+        "id": 15,
+        "msp": true,
+        "name": "Jorge",
+        "lastname": "Salmerón Domínguez",
+        "years": [
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Guadalajara",
+        "university": "Universidad de Alcalá",
+        "email": "jorge.salmeron@studentpartner.com",
+        "skills": "IT Network, Windows Phone, App Studio",
+        "twitter": "JorgeSalme",
+        "linkedin": "jorgesalme",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/526543751674470400/xVTHfpqT.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/526543751674470400/xVTHfpqT_normal.jpeg",
+        "location": {
+            "lon": 40.63,
+            "lat": -3.17
+        }
     }
 ]
