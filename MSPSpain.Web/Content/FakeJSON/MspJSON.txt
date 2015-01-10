@@ -339,8 +339,8 @@
         "image": "https://pbs.twimg.com/profile_images/526543751674470400/xVTHfpqT.jpeg",
         "thumbnail": "https://pbs.twimg.com/profile_images/526543751674470400/xVTHfpqT_normal.jpeg",
         "location": {
-            "lon": 40.63,
-            "lat": -3.17
+            "lon": 40.632637,
+            "lat": -3.165924
         }
     }
 ]
