@@ -155,7 +155,7 @@
         "linkedin": "joan-josep-escadell-riera",
         "website": "http://www.johnnyjosep.com",
         "image": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_400x400.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_normal.jpeg",
         "location": {
             "lon": 39.583683,
             "lat": 2.656207
