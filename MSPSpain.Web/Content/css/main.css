@@ -481,3 +481,32 @@ input {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   opacity: 0; }
+
+#notification_panel{
+    width:100%;
+    z-index: 20;
+    position:fixed;
+    bottom:0px; 
+}
+
+#notification_panel label{
+    float:left;
+    width:100%;
+    background:#DDD;
+    padding-left:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top: 1px solid #AAA; 
+}
+
+input[type=checkbox] {
+     visibility:hidden;
+}
+
+#notification_panel input[type=checkbox]:checked + label {
+    visibility:hidden;
+}
+
+#notification_panel label:active{
+    background:#AAA;
+}
