@@ -7,5 +7,41 @@
 				"http://wscont2.apps.microsoft.com/winstore/1x/eff71487-9e75-477f-b4e0-0e644ab61881/Screenshot.288935.100000.jpg"
 			],
 		"url": "http://apps.microsoft.com/windows/en-us/app/space-touch/41828e87-6926-48c1-8791-d14320df4ea2"
+	},
+	{
+		"id": 2,
+		"name": "Track Series",
+		"description": "If you are a TV Shows addict, you will love TrackSeries app for Windows 8.1. TrackSeries will help you to follow, organize and know when your favourite TV Shows have been aired.",
+		"images": [
+				"http://wscont1.apps.microsoft.com/winstore/1x/d72d0104-f8e8-4e94-97a9-602f80bebd92/Screenshot.374698.1000000.jpg"
+			],
+		"url": "http://apps.microsoft.com/windows/es-es/app/trackseries/b0e66623-866a-4319-ae90-cf504fe0ef84"
+	},
+	{
+		"id": 3,
+		"name": "Football Coach",
+		"description": "Football Coach helps you stop using whiteboards and markers to explain the strategy prior to the football game with your players, with a laptop or tablet can use this application and teaching plays, strategy and everything you need, and you can delete with a single click .",
+		"images": [
+				"http://wscont1.apps.microsoft.com/winstore/1x/98ecb2af-2085-4709-aac0-9c2f9b2ccb55/Screenshot.245603.1000002.jpg"
+			],
+		"url": "http://apps.microsoft.com/windows/es-es/app/football-coach/b9be6e97-9b3b-4c06-adbb-c1566f0d2bc9"
+	},
+	{
+		"id": 4,
+		"name": "Not a Cat",
+		"description": "Not A Cat is a platformer game in which Silk, a young basilisk with the power to control the elements, will explore caves and dungeons to save his people. This game has been made by Binary Tales, a student team, and won the online final at the Imagine Cup 2014.",
+		"images": [
+				"http://wscont2.apps.microsoft.com/winstore/1x/8459ca94-e1cd-444d-8079-b57a41f0755a/Screenshot.425872.1000003.jpg"
+			],
+		"url": "http://apps.microsoft.com/windows/es-es/app/not-a-cat/e5b72e21-a221-4f83-a403-1e3608794068"
+	},
+	{
+		"id": 5,
+		"name": "Karmacracy",
+		"description": "La aplicación de Karmacracy llega a tu Windows 8! Con un diseño adaptado al estilo Metro, puedes acceder a los enlaces de moda, y compartir tus propios enlaces, así como tener acceso a algunas estadísticas.",
+		"images": [
+				"http://wscont2.apps.microsoft.com/winstore/1x/6ee8d4b6-7a0c-42cf-82ad-1049e2458973/Screenshot.332087.100000.jpg"
+			],
+		"url": "http://apps.microsoft.com/windows/es-es/app/karmacracy/a6266aca-8a2c-4a05-b268-b0163e72152c"
 	}
 ]
