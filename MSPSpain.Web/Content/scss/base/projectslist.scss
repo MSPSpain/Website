@@ -28,13 +28,6 @@ $delay: 0.5s;
             white-space: normal;
         }
     }
-    a, a:visited {
-        color: $Color-Foreground-dark;
-    }
-
-    a:hover, a:active {
-        color: $Color-Brand-main;
-    }
 }
 
 .project__image {

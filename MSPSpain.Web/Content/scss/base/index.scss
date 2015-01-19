@@ -22,8 +22,15 @@ body {
 }
 
 a, a:visited, a:hover, a:active {
-    color: $Color-Brand-secondary;
     text-decoration: none;
+}
+
+a, a:visited {
+    color: $Color-Brand-main;
+}
+
+a:hover, a:active {
+    color: $Color-Brand-secondary;
 }
 
 .header {

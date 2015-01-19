@@ -157,8 +157,13 @@ body {
   overflow-y: scroll; }
 
 a, a:visited, a:hover, a:active {
-  color: #0792fc;
   text-decoration: none; }
+
+a, a:visited {
+  color: #EE8702; }
+
+a:hover, a:active {
+  color: #0792fc; }
 
 .header {
   background: rgba(0, 0, 0, 0.7);
@@ -477,10 +482,6 @@ input {
       opacity: 1;
       overflow: visible;
       white-space: normal; }
-  .project a, .project a:visited {
-    color: #000000; }
-  .project a:hover, .project a:active {
-    color: #EE8702; }
 
 .project__image {
   width: 100%;
