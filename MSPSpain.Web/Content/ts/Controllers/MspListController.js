@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var MspListController = (function () {
         function MspListController($scope, $http) {
             this.$scope = $scope;
@@ -27,4 +26,4 @@ var Msp;
     })();
     Msp.MspListController = MspListController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=MspListController.js.map
+//# sourceMappingURL=msplistcontroller.js.map

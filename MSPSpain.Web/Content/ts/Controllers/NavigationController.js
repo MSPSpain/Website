@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var NavigationController = (function () {
         function NavigationController($scope, $location) {
             this.$scope = $scope;
@@ -24,4 +23,4 @@ var Msp;
     })();
     Msp.NavigationController = NavigationController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=NavigationController.js.map
+//# sourceMappingURL=navigationcontroller.js.map
