@@ -70,3 +70,22 @@ $delay: 0.5s;
     transition-delay: $delay;
     opacity: 0;
 }
+
+.js-exmsp {
+    position: relative;
+
+    &::before {
+        background: $Color-Brand-main;
+        font-size: 0.7em;
+        border-radius: 50%;
+        height: 40px;
+        content: 'ExMSP';
+        color: $Color-Foreground-light;
+        position: absolute;
+        padding: 5px;
+        padding-top: 15px;
+        padding-left: 4px;
+        right: 13px;
+        width: 40px;
+    }
+}

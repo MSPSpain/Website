@@ -3,10 +3,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 * {
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
-  box-sizing: border-box; }
+          transition: all 0.5s; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -85,17 +87,20 @@ table {
 
 @font-face {
   font-family: OpenSans;
-  font-weight: bolder;
+  font-weight: bold;
   font-style: normal;
   src: url('../fonts/OpenSans/Bold/OpenSans-Bold.eot');
   src: url('../fonts/OpenSans/Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans/Bold/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans/Bold/OpenSans-Bold.svg#OpenSans') format('svg'); }
 
 @font-face {
   font-family: OpenSans;
-  font-weight: bolder;
+  font-weight: bold;
   font-style: italic;
   src: url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.eot');
   src: url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.woff') format('woff'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.ttf') format('truetype'), url('../fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.svg#OpenSans') format('svg'); }
+
+b {
+  font-weight: 400; }
 
 @font-face {
   font-family: Icomoon;
@@ -462,6 +467,22 @@ input {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   opacity: 0; }
+
+.js-exmsp {
+  position: relative; }
+  .js-exmsp::before {
+    background: #EE8702;
+    font-size: 0.7em;
+    border-radius: 50%;
+    height: 40px;
+    content: 'ExMSP';
+    color: #FFFFFF;
+    position: absolute;
+    padding: 5px;
+    padding-top: 15px;
+    padding-left: 4px;
+    right: 13px;
+    width: 40px; }
 
 .page__content-project {
   width: 80%;
