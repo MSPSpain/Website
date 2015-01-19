@@ -109,3 +109,30 @@ input {
     font-size: 1.2em;
     line-height: 1.3em;
 }
+
+.notification_panel{
+    width:100%;
+    z-index: 20;
+    position:fixed;
+    bottom:0px; 
+}
+
+.notification_panel label{
+    float:left;
+    width:100%;
+    opacity: 0.8;
+    color: $Color-Foreground-dimmed;
+    background: $Color-Background-dark;
+    padding-left:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top: 1px solid darken($Color-Background-dark, 10%); 
+}
+
+.notification_panel input[type=checkbox] {
+     visibility:hidden;
+}
+
+.notification_panel input[type=checkbox]:checked + label {
+    visibility:hidden;
+}

@@ -15,11 +15,11 @@
 </head>
 <body ng-app="Msp">
     <div class="main">
-        <div id="notification_panel">
-            <input type="checkbox" id="notification" value="null" /> <label for="notification" class="notification_title">
+        <div class="notification_panel">
+            <input type="checkbox" id="notification" value="null" /> 
+            <label for="notification" class="notification_panel__title">
                 Hola, nos alegra verte por aquí, sin embargo aún no hemos terminado. Estamos añadiendo todas las mejoras que podemos<br /><br />
-                Vuelve dentro de poco!
-                
+                Vuelve dentro de poco! Haz clic para cerrar el diálogo.
             </label>
         </div>
         <header class="header">
@@ -46,18 +46,18 @@
 
     <!-- build:js js/code.js -->
     <!-- inject:js -->
-    <script src="/Content/ts/Models/Project.js"></script>
-    <script src="/Content/ts/Models/Quote.js"></script>
-    <script src="/Content/ts/Models/User.js"></script>
-    <script src="/Content/ts/Interfaces/IMainScope.js"></script>
-    <script src="/Content/ts/Interfaces/IMspListScope.js"></script>
-    <script src="/Content/ts/Interfaces/INavigationScope.js"></script>
-    <script src="/Content/ts/Interfaces/IProjectsScope.js"></script>
-    <script src="/Content/ts/Controllers/MapController.js"></script>
-    <script src="/Content/ts/Controllers/MspListController.js"></script>
-    <script src="/Content/ts/Controllers/NavigationController.js"></script>
-    <script src="/Content/ts/Controllers/ProjectsController.js"></script>
+    <script src="/Content/ts/Models/project.js"></script>
+    <script src="/Content/ts/Models/quote.js"></script>
+    <script src="/Content/ts/Models/user.js"></script>
+    <script src="/Content/ts/Interfaces/imainscope.js"></script>
+    <script src="/Content/ts/Interfaces/imsplistscope.js"></script>
+    <script src="/Content/ts/Interfaces/inavigationscope.js"></script>
+    <script src="/Content/ts/Interfaces/iprojectsscope.js"></script>
     <script src="/Content/ts/Controllers/maincontroller.js"></script>
+    <script src="/Content/ts/Controllers/mapcontroller.js"></script>
+    <script src="/Content/ts/Controllers/msplistcontroller.js"></script>
+    <script src="/Content/ts/Controllers/navigationcontroller.js"></script>
+    <script src="/Content/ts/Controllers/projectscontroller.js"></script>
     <script src="/Content/ts/App.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
