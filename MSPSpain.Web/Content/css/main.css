@@ -139,6 +139,12 @@ table {
 .icon-linkedin:before {
   content: "\e606"; }
 
+.icon-barcode:before {
+  content: "\e937"; }
+
+.icon-table2:before {
+  content: "\ea71"; }
+
 body, html {
   background: #F0F0F0;
   height: 100%;
