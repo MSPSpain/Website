@@ -39,8 +39,8 @@
         "twitter": "Josevi_7",
         "linkedin": "josevicenteagullo",
         "website": "http://joseviagullo7.azurewebsites.net",
-        "image": "https://pbs.twimg.com/profile_images/2759757889/c590447584d7d9e90f78c357aa341826.png",
-        "thumbnail": "https://pbs.twimg.com/profile_images/2759757889/c590447584d7d9e90f78c357aa341826_normal.png",
+        "image": "https://pbs.twimg.com/profile_images/555480126633160704/hDEjg1nx.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/555480126633160704/hDEjg1nx_normal.jpeg",
         "location": {
             "lon": 38.387807,
             "lat": -0.51203
