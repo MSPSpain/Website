@@ -19,14 +19,14 @@
 
             <div class="flex">
                 <div class="flex__item user"  ng-repeat="user in users | orderBy:'lastname' | filter:searchText" >
-                    <div ng-class="{'js-exmsp': !user.msp}"><img src="{{user.image}}" class="user__image" /></div>
+                    <div ng-class="{'js-exmsp': !user.msp, 'js-msp': user.msp}"><img src="{{user.image}}" class="user__image" /></div>
                     <div class="user__info">
                         <h3 class="user__info__item user__info__item-name">{{user.name}} {{user.lastname}}</h3>
                         <a href="http://twitter.com/{{user.twitter}}" target="_blank" class="user__info__item user__info__item-twitter icon-twitter">{{user.twitter}}</a>
                         <a href="mailto:{{user.email}}" class="user__info__item user__info__item-email icon-bubble">
                             {{user.email}}
                         </a>
-                        <span class="user__info__item user__info__item-location user-hidden icon-location"><b ng-if="!user.msp">ExMSP, </b>{{user.university}}, {{user.city}}</span>
+                        <span class="user__info__item user__info__item-location user-hidden icon-location"><b ng-if="!user.msp">Alumni, </b>{{user.university}}, {{user.city}}</span>
                         <span class="user__info__item user__info__item-skills user-hidden icon-lightning">{{user.skills}}</span>
                         <a href="http://linkedin.com/in/{{user.linkedin}}" target="_blank" class="user__info__item user__info__item-linkedin user-hidden icon-linkedin">{{user.linkedin}}</a>
                     </div>

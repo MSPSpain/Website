@@ -79,12 +79,31 @@ $delay: 0.5s;
         font-size: 0.7em;
         border-radius: 50%;
         height: 40px;
-        content: 'ExMSP';
+        content: 'Alumni';
         color: $Color-Foreground-light;
         position: absolute;
         padding: 5px;
         padding-top: 15px;
-        padding-left: 4px;
+        padding-left: 3px;
+        right: 13px;
+        width: 40px;
+    }
+}
+
+.js-msp {
+    position: relative;
+
+    &::before {
+        background: $Color-Brand-secondary;
+        font-size: 0.7em;
+        border-radius: 50%;
+        height: 40px;
+        content: 'MSP';
+        color: $Color-Foreground-light;
+        position: absolute;
+        padding: 5px;
+        padding-top: 15px;
+        padding-left: 10px;
         right: 13px;
         width: 40px;
     }
