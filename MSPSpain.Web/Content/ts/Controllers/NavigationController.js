@@ -4,17 +4,19 @@ var Msp;
     'use strict';
     var NavigationController = (function () {
         function NavigationController($scope, $location) {
+            var _this = this;
             this.$scope = $scope;
             this.$location = $location;
-            $scope.classActive = function (viewLocation) {
-                if (this.isActive(viewLocation)) {
-                    return 'active';
-                }
-            };
-            $scope.isActive = function (viewLocation) {
-                return viewLocation === $location.path();
-            };
+            $scope.classActive = function (v) { return _this.classActive(v); };
         }
+        NavigationController.prototype.classActive = function (viewLocation) {
+            if (this.isActive(viewLocation)) {
+                return 'active';
+            }
+        };
+        NavigationController.prototype.isActive = function (viewLocation) {
+            return viewLocation === this.$location.path();
+        };
         NavigationController.$inject = [
             '$scope',
             '$location'

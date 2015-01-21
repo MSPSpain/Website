@@ -11,7 +11,7 @@ var Msp;
     angular.module('Msp', ['ngRoute', 'githubRepo']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]);
     // Router configuration
     function routes($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/Inicio', {
             controller: 'mainController',
             templateUrl: Msp.config.viewsPath + 'MainPage.html'
         }).when('/ListaMSP', {
@@ -24,7 +24,7 @@ var Msp;
             controller: 'mapController',
             templateUrl: Msp.config.viewsPath + 'MapPage.html'
         }).otherwise({
-            redirectTo: '/'
+            redirectTo: '/Inicio'
         });
     }
 })(Msp || (Msp = {}));

@@ -24,7 +24,7 @@ module Msp {
     // Router configuration
     function routes($routeProvider: ng.route.IRouteProvider) {
         $routeProvider
-            .when('/', {
+            .when('/Inicio', {
                 controller: 'mainController',
                 templateUrl: config.viewsPath + 'MainPage.html'
             })
@@ -41,7 +41,7 @@ module Msp {
                 templateUrl: config.viewsPath + 'MapPage.html'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/Inicio'
             });
     }
 

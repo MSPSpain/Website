@@ -21,6 +21,9 @@ body {
     overflow-y: scroll;
 }
 
+p {
+    margin: 10px;
+}
 a, a:visited, a:hover, a:active {
     text-decoration: none;
 }
@@ -68,8 +71,8 @@ a:hover, a:active {
         color: $Color-Foreground-light;
     }
 
-    a:hover, a:active {
-        color: $Color-Brand-main;
+    a:hover, a:active, .active {
+        color: $Color-Brand-main !important;
     }
 }
 

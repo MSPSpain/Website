@@ -167,6 +167,9 @@ body {
   overflow-x: hidden;
   overflow-y: scroll; }
 
+p {
+  margin: 10px; }
+
 a, a:visited, a:hover, a:active {
   text-decoration: none; }
 
@@ -205,8 +208,8 @@ a:hover, a:active {
   display: block; }
   .header__menu__list a, .header__menu__list a:visited {
     color: #FFFFFF; }
-  .header__menu__list a:hover, .header__menu__list a:active {
-    color: #EE8702; }
+  .header__menu__list a:hover, .header__menu__list a:active, .header__menu__list .active {
+    color: #EE8702 !important; }
 
 .header__menu__list__item {
   display: inline-block;

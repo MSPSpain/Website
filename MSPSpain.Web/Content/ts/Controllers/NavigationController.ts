@@ -14,15 +14,17 @@ module Msp {
             private $scope: INavigationScope,
             private $location: ng.ILocationService
             ) {
+            $scope.classActive = v => this.classActive(v);
+        }
 
-            $scope.classActive = function (viewLocation) {
-                if (this.isActive(viewLocation)) {
-                    return 'active';
-                }
+        classActive(viewLocation: string) { 
+            if (this.isActive(viewLocation)) {
+                return 'active';
             }
-            $scope.isActive = function(viewLocation) {
-                return viewLocation === $location.path();
-            }
+        }
+
+        isActive(viewLocation: string) { 
+            return viewLocation === this.$location.path();
         }
 
         
