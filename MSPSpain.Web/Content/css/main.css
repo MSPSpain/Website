@@ -7,8 +7,8 @@
   box-sizing: border-box; }
 
 * {
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s; }
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -210,11 +210,33 @@ a:hover, a:active {
     color: #FFFFFF; }
   .header__menu__list a:hover, .header__menu__list a:active, .header__menu__list .active {
     color: #EE8702 !important; }
+  @media screen and (max-width: 1030px) {
+    .header__menu__list {
+      display: none; } }
 
 .header__menu__list__item {
   display: inline-block;
   margin: 20px;
   font-weight: bold; }
+
+.header__menu__list__button {
+  display: none;
+  font-size: 44px;
+  padding: 6px; }
+  @media screen and (max-width: 1030px) {
+    .header__menu__list__button {
+      display: inline-block; } }
+
+.check_responsive_menu:checked ~ .header__menu .header__menu__list {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 96px; }
+  .check_responsive_menu:checked ~ .header__menu .header__menu__list .header__menu__list__item {
+    display: block;
+    font-size: 1.5em; }
 
 input {
   padding: 10px;
@@ -263,11 +285,11 @@ input {
   padding-bottom: 10px;
   border-top: 1px solid #020202; }
 
-.notification_panel input[type=checkbox] {
-  visibility: hidden; }
+.is-hidden {
+  display: none; }
 
 .notification_panel input[type=checkbox]:checked + label {
-  visibility: hidden; }
+  display: none; }
 
 .page {
   width: 100%;

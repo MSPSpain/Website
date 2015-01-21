@@ -74,12 +74,40 @@ a:hover, a:active {
     a:hover, a:active, .active {
         color: $Color-Brand-main !important;
     }
+
+    @media screen and (max-width: $Size-Window-big) {
+        display: none;
+    }
 }
 
 .header__menu__list__item {
     display: inline-block;
     margin: 20px;
     font-weight: bold;
+}
+
+.header__menu__list__button {
+    display: none;
+    font-size: 44px;
+    padding: 6px;
+
+    @media screen and (max-width: $Size-Window-big) {
+        display: inline-block;
+    }
+}
+
+.check_responsive_menu:checked ~ .header__menu .header__menu__list {
+    display: block;
+    background: rgba(black, 0.7);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 96px;
+
+    .header__menu__list__item {
+        display: block;
+        font-size: 1.5em;
+    }
 }
 
 input {
@@ -139,10 +167,10 @@ input {
     border-top: 1px solid darken($Color-Background-dark, 10%); 
 }
 
-.notification_panel input[type=checkbox] {
-     visibility:hidden;
+.is-hidden {
+     display: none;
 }
 
 .notification_panel input[type=checkbox]:checked + label {
-    visibility:hidden;
+    display:none;
 }

@@ -17,7 +17,7 @@
 <body ng-app="Msp">
     <div class="main">
         <div class="notification_panel">
-            <input type="checkbox" id="notification" value="null" /> 
+            <input type="checkbox" class="is-hidden" id="notification" value="null" /> 
             <label for="notification" class="notification_panel__title">
                 Hola, nos alegra verte por aquí, sin embargo aún no hemos terminado. Estamos añadiendo todas las mejoras que podemos<br /><br />
                 Vuelve dentro de poco! Haz clic para cerrar el diálogo.
@@ -25,6 +25,7 @@
         </div>
         <header class="header">
             <h1 class="header__title">MSPSpain</h1>
+            <input type="checkbox" class="check_responsive_menu is-hidden" id="responsive_menu" value="null" /> 
             <nav class="header__menu" ng-controller="navigationController">
                 <ul class="header__menu__list">
                     <li class="header__menu__list__item"> <a ng-class="classActive('/Inicio')" href="#/Inicio">Inicio</a></li>
@@ -32,6 +33,7 @@
                     <li class="header__menu__list__item"> <a ng-class="classActive('/Proyectos')" href="#/Proyectos">Nuestros proyectos</a></li>
                     <li class="header__menu__list__item"> <a ng-class="classActive('/Mapa')" href="#/Mapa">Dónde estamos</a></li>
                 </ul>
+                <label class="header__menu__list__button icon-menu" for="responsive_menu"></label>
             </nav>
         </header>
         <section ng-view class="content"></section>
