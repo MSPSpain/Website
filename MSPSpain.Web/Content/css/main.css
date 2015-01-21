@@ -221,6 +221,7 @@ a:hover, a:active {
 
 .header__menu__list__button {
   display: none;
+  cursor: pointer;
   font-size: 44px;
   padding: 6px; }
   @media screen and (max-width: 1030px) {
@@ -250,6 +251,10 @@ input {
   min-height: 200px;
   padding: 5%;
   width: 100%; }
+  @media screen and (max-width: 1030px) {
+    .quote {
+      font-size: 2.2em;
+      min-height: 100px; } }
 
 .repos {
   text-align: center;
@@ -259,8 +264,18 @@ input {
   display: inline-block;
   margin: 10px;
   width: 20%; }
+  .repos__item > div {
+    margin: 0 auto; }
+  @media screen and (max-width: 1030px) {
+    .repos__item {
+      display: block;
+      width: 100%; } }
   .repos__item .github-box {
     height: 112px; }
+    @media screen and (max-width: 1030px) {
+      .repos__item .github-box {
+        width: 400px;
+        margin: 0 auto; } }
 
 .about {
   width: 90%;
@@ -273,6 +288,9 @@ input {
   z-index: 20;
   position: fixed;
   bottom: 0px; }
+  @media screen and (max-width: 1030px) {
+    .notification_panel {
+      display: none; } }
 
 .notification_panel label {
   float: left;
@@ -333,6 +351,9 @@ input {
     font-size: 0.4em;
     margin-top: 20px;
     line-height: 1.3em; }
+  @media screen and (max-width: 1030px) {
+    .page__header__titles {
+      width: 70%; } }
 
 .page__header-main {
   background-image: url('../images/headers/stairs_original.jpg'); }

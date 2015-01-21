@@ -53,6 +53,10 @@ $header-height-tablet-subs: 200px;
         margin-top: 20px;
         line-height: 1.3em;
     }
+
+    @media screen and (max-width: $Size-Window-big) {
+        width: 70%;
+    }
 }
 
 .page__header-main {
