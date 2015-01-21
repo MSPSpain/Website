@@ -5,6 +5,6 @@
     },
      {
         "id": 2,
-        "quote": "tus sueños, son código."
+        "quote": "cuando tus sueños, son código."
     }
 ]
