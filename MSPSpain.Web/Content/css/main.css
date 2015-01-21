@@ -275,7 +275,7 @@ input {
     height: 112px; }
     @media screen and (max-width: 1030px) {
       .repos__item .github-box {
-        width: 400px;
+        width: 80%;
         margin: 0 auto; } }
 
 .about {
