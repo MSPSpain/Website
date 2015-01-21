@@ -289,8 +289,8 @@
         "twitter": "arcadio_g_s",
         "linkedin": "arcadiogarcia",
         "website": "",
-        "image": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_400x400_normal.jpeg",
+        "image": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/543343577116323841/LddVHWF5_normal.jpeg",
         "location": {
             "lon": 40.547067,
             "lat": -3.692058
