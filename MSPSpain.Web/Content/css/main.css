@@ -230,7 +230,7 @@ a:hover, a:active {
 
 .check_responsive_menu:checked ~ .header__menu .header__menu__list {
   display: block;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   width: 100%;
   left: 0;
@@ -480,6 +480,18 @@ input {
       opacity: 1;
       overflow: visible;
       white-space: normal; }
+  @media screen and (max-width: 1030px) {
+    .user {
+      width: 300px;
+      height: 350px;
+      -webkit-transition-delay: 0.5s;
+              transition-delay: 0.5s; }
+      .user .user-hidden {
+        -webkit-transition-delay: 0.5s;
+                transition-delay: 0.5s;
+        opacity: 1;
+        overflow: visible;
+        white-space: normal; } }
   .user a, .user a:visited {
     color: #000000; }
   .user a:hover, .user a:active {
@@ -572,6 +584,18 @@ input {
       opacity: 1;
       overflow: visible;
       white-space: normal; }
+  @media screen and (max-width: 1030px) {
+    .project {
+      width: 400px;
+      height: 450px;
+      -webkit-transition-delay: 0.5s;
+              transition-delay: 0.5s; }
+      .project .project-hidden {
+        -webkit-transition-delay: 0.5s;
+                transition-delay: 0.5s;
+        opacity: 1;
+        overflow: visible;
+        white-space: normal; } }
 
 .project__image {
   width: 100%;

@@ -28,6 +28,19 @@ $delay: 0.5s;
             white-space: normal;
         }
     }
+
+    @media screen and (max-width: $Size-Window-big) {
+        width: 300px;
+        height: 350px;
+        transition-delay: $delay;
+
+        .user-hidden {
+            transition-delay: $delay;
+            opacity: 1;
+            overflow: visible;
+            white-space: normal;
+        }
+    }
     a, a:visited {
         color: $Color-Foreground-dark;
     }

@@ -28,6 +28,19 @@ $delay: 0.5s;
             white-space: normal;
         }
     }
+
+    @media screen and (max-width: $Size-Window-big) {
+        width: 400px;
+        height: 450px;
+        transition-delay: $delay;
+
+        .project-hidden {
+            transition-delay: $delay;
+            opacity: 1;
+            overflow: visible;
+            white-space: normal;
+        }
+    }
 }
 
 .project__image {
