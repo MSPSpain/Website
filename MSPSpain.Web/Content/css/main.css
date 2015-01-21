@@ -228,16 +228,17 @@ a:hover, a:active {
     .header__menu__list__button {
       display: inline-block; } }
 
-.check_responsive_menu:checked ~ .header__menu .header__menu__list {
-  display: block;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 96px; }
-  .check_responsive_menu:checked ~ .header__menu .header__menu__list .header__menu__list__item {
+@media screen and (max-width: 1030px) {
+  .check_responsive_menu:checked ~ .header__menu .header__menu__list {
     display: block;
-    font-size: 1.5em; }
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 96px; }
+    .check_responsive_menu:checked ~ .header__menu .header__menu__list .header__menu__list__item {
+      display: block;
+      font-size: 1.5em; } }
 
 input {
   padding: 10px;

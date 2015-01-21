@@ -98,16 +98,18 @@ a:hover, a:active {
 }
 
 .check_responsive_menu:checked ~ .header__menu .header__menu__list {
-    display: block;
-    background: rgba(black, 0.9);
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 96px;
-
-    .header__menu__list__item {
+    @media screen and (max-width: $Size-Window-big) {
         display: block;
-        font-size: 1.5em;
+        background: rgba(black, 0.9);
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 96px;
+
+        .header__menu__list__item {
+            display: block;
+            font-size: 1.5em;
+        }
     }
 }
 
