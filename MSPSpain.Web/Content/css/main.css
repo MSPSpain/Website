@@ -269,7 +269,8 @@ input {
 .page {
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 20px; }
 
 .page__header {
   height: 600px;
