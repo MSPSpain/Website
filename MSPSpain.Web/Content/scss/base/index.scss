@@ -149,17 +149,7 @@ input {
     }
 
     @media screen and (max-width: $Size-Window-big) {
-        display: block;
-        width: 100%;
-    }
-
-    .github-box {
-        height: 112px;
-
-        @media screen and (max-width: $Size-Window-big) {
-            width: 80%;
-            margin: 0 auto;
-        }
+        display: none;
     }
 }
 
