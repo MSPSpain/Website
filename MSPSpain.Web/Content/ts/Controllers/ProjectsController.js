@@ -1,7 +1,8 @@
-/// <reference path="../imports.ts" />
+﻿/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
+
     var ProjectsController = (function () {
         function ProjectsController($scope, $http) {
             this.$scope = $scope;
@@ -26,4 +27,4 @@ var Msp;
     })();
     Msp.ProjectsController = ProjectsController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=projectscontroller.js.map
+//# sourceMappingURL=ProjectsController.js.map

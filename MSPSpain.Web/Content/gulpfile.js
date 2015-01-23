@@ -6,9 +6,10 @@ var files = {
 	buildJS: 'build/code.js',
 	buildCSS: 'build/styles.css',
 	css: 'css/**/*.css',
-	filePaths: ['ts/Services/*.js', 'ts/Models/*.js', 'ts/Interfaces/*.js', 'ts/Controllers/*.js', 'ts/App.js'],
+	filePaths: ['css/**/*.css', 'ts/Services/*.js', 'ts/Models/*.js', 'ts/Interfaces/*.js', 'ts/Controllers/*.js', 'ts/App.js'],
 	index: '../Views/Home/Index.cshtml',
 	indexBkp: '../Views/Home/Index.cshtml.bkp',
+	js: 'js/**/*.js',
 	scss: 'scss/*.scss',
 	scssAll: 'scss/**/*.scss'
 };
@@ -17,7 +18,8 @@ var paths = {
 	build: 'build',
 	css: 'css',
 	project: '../Views/Home/',
-	scss: 'scss'
+	scss: 'scss',
+    js: 'js'
 };
 
 // Compile Sass
@@ -31,17 +33,17 @@ gulp.task('sass', function(){
 });
 
 // Inject JS & CSS Files
-gulp.task('inject', function() {
+gulp.task('inject', ['clear'], function() {
 	return gulp.src(files.index)
 		.pipe(plugins.inject(
 			gulp.src(files.filePaths, { read: false }),
 			{
 				transform: function (filepath) {
 					if (filepath.indexOf('.js') > -1) {
-						return '<script src="/Content/' + filepath.slice(1) + '"></script>'
+						return '<script src="Content/' + filepath.slice(1) + '"></script>'
 					}
 					// Css
-					return ' <link rel="stylesheet" href="Content/' + filepath + '">'
+					return ' <link rel="stylesheet" href="Content' + filepath + '">'
 				}
 			}
 		))
@@ -52,8 +54,8 @@ gulp.task('inject', function() {
 gulp.task('clear', function () {
 
 	// If exist indexBkp replace normal index and delete this
-	gulp.src(files.indexBkp)
-		.pipe(plugins.rename('default.html'))
+    gulp.src(files.indexBkp)
+		.pipe(plugins.rename('Index.cshtml'))
 		.pipe(gulp.dest(paths.project)); 
 
 	return gulp.src(files.build, { read: false })
@@ -65,26 +67,24 @@ gulp.task('buildFiles', function() {
 	// Save index
 	gulp.src(files.index)
 		.pipe(plugins.clone())
-		.pipe(plugins.rename('default.html.bkp'))
+		.pipe(plugins.rename('Index.cshtml.bkp'))
 		.pipe(gulp.dest(paths.project));
 
 	// Build files
-	gulp.src(files.index)
+	return gulp.src(files.index)
 		.pipe(plugins.usemin(
 			{
 				css: [plugins.minifyCss()],
-				js: [plugins.uglify()]
+				js: /*[plugins.uglify()]*/[]
 			}
 		))
-		.pipe(gulp.dest(paths.project));
-	
-	gulp.src(files.buildJS)
-		.pipe(plugins.uglify())
 		.pipe(gulp.dest(paths.build));
+});
 
-	return gulp.src(files.buildCSS)
-		.pipe(plugins.minifyCss())
-		.pipe(gulp.dest(paths.build));
+//relocate index
+gulp.task('relocateIndex',['buildFiles'], function () {
+    gulp.src(paths.build + '/Index.cshtml').pipe(gulp.dest(paths.project));
+    return gulp.src(paths.build + '/Index.cshtml').pipe(plugins.clean({ force: true }));
 });
 
 // Init watch
@@ -94,4 +94,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['clear', 'inject', 'sass']);
-gulp.task('build', ['default', 'buildFiles']);
+gulp.task('build', ['default', 'buildFiles', 'relocateIndex']);

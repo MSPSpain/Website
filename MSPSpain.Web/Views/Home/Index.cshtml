@@ -8,16 +8,16 @@
     <meta name="description" content="Formado por estudiantes y antiguos estudiantes de los Microsoft Student Partners o MSP, nos encanta aprender y compartir: C#, JavaScript, TypeScript, Xaml...">
 
     <!-- CSS -->
-    <!-- build:css css/styles.css -->
+    <!-- build:css(../../MSPSpain.Web/) Content/build/css/styles.css -->
     <!-- inject:css -->
-    <link href="/Content/css/main.css" rel="stylesheet" />
+     <link rel="stylesheet" href="Content/css/main.css">
     <!-- endinject -->
     <!-- endbuild -->
 </head>
 <body ng-app="Msp">
     <div class="main">
         <div class="notification_panel">
-            <input type="checkbox" class="is-hidden" id="notification" value="null" /> 
+            <input type="checkbox" class="is-hidden" id="notification" value="null" />
             <label for="notification" class="notification_panel__title">
                 Hola, nos alegra verte por aquí, sin embargo aún no hemos terminado. Estamos añadiendo todas las mejoras que podemos<br /><br />
                 Vuelve dentro de poco! Haz clic para cerrar el diálogo.
@@ -25,7 +25,7 @@
         </div>
         <header class="header">
             <h1 class="header__title">MSPSpain</h1>
-            <input type="checkbox" class="check_responsive_menu is-hidden" id="responsive_menu" value="null" /> 
+            <input type="checkbox" class="check_responsive_menu is-hidden" id="responsive_menu" value="null" />
             <nav class="header__menu" ng-controller="navigationController">
                 <ul class="header__menu__list">
                     <li class="header__menu__list__item"> <a ng-class="classActive('/Inicio')" href="#/Inicio">Inicio</a></li>
@@ -47,21 +47,21 @@
     </script>
 
 
-    <!-- build:js js/code.js -->
+    <!-- build:js(../../MSPSpain.Web/) Content/build/js/code.js -->
     <!-- inject:js -->
-    <script src="/Content/ts/Models/project.js"></script>
-    <script src="/Content/ts/Models/quote.js"></script>
-    <script src="/Content/ts/Models/user.js"></script>
-    <script src="/Content/ts/Interfaces/imainscope.js"></script>
-    <script src="/Content/ts/Interfaces/imsplistscope.js"></script>
-    <script src="/Content/ts/Interfaces/inavigationscope.js"></script>
-    <script src="/Content/ts/Interfaces/iprojectsscope.js"></script>
-    <script src="/Content/ts/Controllers/maincontroller.js"></script>
-    <script src="/Content/ts/Controllers/mapcontroller.js"></script>
-    <script src="/Content/ts/Controllers/msplistcontroller.js"></script>
-    <script src="/Content/ts/Controllers/navigationcontroller.js"></script>
-    <script src="/Content/ts/Controllers/projectscontroller.js"></script>
-    <script src="/Content/ts/App.js"></script>
+    <script src="Content/ts/Models/Project.js"></script>
+    <script src="Content/ts/Models/Quote.js"></script>
+    <script src="Content/ts/Models/User.js"></script>
+    <script src="Content/ts/Interfaces/IMainScope.js"></script>
+    <script src="Content/ts/Interfaces/IMspListScope.js"></script>
+    <script src="Content/ts/Interfaces/INavigationScope.js"></script>
+    <script src="Content/ts/Interfaces/IProjectsScope.js"></script>
+    <script src="Content/ts/Controllers/MapController.js"></script>
+    <script src="Content/ts/Controllers/MspListController.js"></script>
+    <script src="Content/ts/Controllers/NavigationController.js"></script>
+    <script src="Content/ts/Controllers/ProjectsController.js"></script>
+    <script src="Content/ts/Controllers/maincontroller.js"></script>
+    <script src="Content/ts/App.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 </body>

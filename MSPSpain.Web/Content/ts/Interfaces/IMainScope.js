@@ -1,2 +1,2 @@
-/// <reference path="../imports.ts" />
-//# sourceMappingURL=imainscope.js.map
+﻿/// <reference path="../imports.ts" />
+//# sourceMappingURL=IMainScope.js.map
