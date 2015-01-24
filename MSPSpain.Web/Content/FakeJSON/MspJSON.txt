@@ -342,5 +342,29 @@
             "lon": 40.632637,
             "lat": -3.165924
         }
+    },
+     {
+        "id": 16,
+        "msp": false,
+        "name": "Roberto",
+        "lastname": "Luis Bisbé",
+        "years": [
+            2011,
+            2012,
+            2013
+        ],
+        "city": "Alcobendas",
+        "university": "Universidad Autónoma de Madrid",
+        "email": "roberto.luis@rlbisbe.net",
+        "skills": "Windows 8, Windows Phone, ASP.net, Javascript",
+        "twitter": "rlbisbe",
+        "linkedin": "rlbisbe",
+        "website": "http://rlbisbe.net",
+        "image": "https://pbs.twimg.com/profile_images/498751989862236160/mQpbtFiq_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/498751989862236160/mQpbtFiq.jpeg",
+        "location": {
+            "lon": 40.547002,
+            "lat": -3.6917273
+        }
     }
 ]
