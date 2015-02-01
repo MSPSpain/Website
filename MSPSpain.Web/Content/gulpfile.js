@@ -34,7 +34,7 @@ gulp.task('sass', function(){
 });
 
 // Inject JS & CSS Files
-gulp.task('inject', ['clear'], function() {
+gulp.task('inject', ['clear', 'sass'], function() {
 	return gulp.src(files.index)
 		.pipe(plugins.inject(
 			gulp.src(files.filePaths, { read: false }),
