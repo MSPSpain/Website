@@ -17,7 +17,8 @@
     "gulp-sass": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
-    "gulp-usemin": "~0.3.2"
+	"gulp-usemin": "~0.3.2",
+	"convertEncoding": "*"
   },
     "main": "gulpfile.js"
 }

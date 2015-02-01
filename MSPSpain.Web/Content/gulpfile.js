@@ -79,6 +79,7 @@ gulp.task('buildFiles', ['sass', 'inject', 'default'], function () {
 				js: /*[plugins.uglify()]*/[]
 			}
 		))
+        .pipe(plugins.convertEncoding({ to: 'utf8' }))
 		.pipe(gulp.dest(paths.general));
 });
 
