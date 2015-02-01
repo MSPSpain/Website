@@ -28,7 +28,7 @@ gulp.task('sass', function(){
 	return gulp.src(files.scss)
 		.pipe(plugins.sass())
 		.pipe(plugins.autoprefixer({
-		    browsers: ['last 2 version', 'ios 6', 'android 4']
+		    browsers: ['last 2 version']
 		}))
 		.pipe(gulp.dest(paths.css));
 });

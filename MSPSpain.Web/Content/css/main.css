@@ -7,8 +7,7 @@
   box-sizing: border-box; }
 
 * {
-  -webkit-transition: all 0.2s;
-          transition: all 0.2s; }
+  transition: all 0.2s; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -380,18 +379,14 @@ input {
   margin-bottom: -3% !important; }
 
 .map * {
-  -webkit-transition: none;
-          transition: none; }
+  transition: none; }
 
 .flex {
   display: -ms-flexbox;
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   box-direction: normal;
   box-orient: horizontal;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
@@ -399,7 +394,6 @@ input {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   box-pack: start;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -407,7 +401,6 @@ input {
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
           align-content: flex-start;
-  -webkit-box-align: start;
   box-align: start;
   flex-align: start;
   -webkit-align-items: flex-start;
@@ -416,18 +409,15 @@ input {
 
 .flex__item {
   ordinal-group: 1;
-  -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
   flex-order: 0;
-  -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
   box-flex: 0;
   box-flex: 0;
-  -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -468,16 +458,13 @@ input {
   width: 200px;
   height: 270px;
   cursor: pointer;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; }
+  transition-delay: 0.5s; }
   .user:active, .user:hover {
     width: 300px;
     height: 350px;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s; }
+    transition-delay: 0.5s; }
     .user:active .user-hidden, .user:hover .user-hidden {
-      -webkit-transition-delay: 0.5s;
-              transition-delay: 0.5s;
+      transition-delay: 0.5s;
       opacity: 1;
       overflow: visible;
       white-space: normal; }
@@ -485,11 +472,9 @@ input {
     .user {
       width: 300px;
       height: 350px;
-      -webkit-transition-delay: 0.5s;
-              transition-delay: 0.5s; }
+      transition-delay: 0.5s; }
       .user .user-hidden {
-        -webkit-transition-delay: 0.5s;
-                transition-delay: 0.5s;
+        transition-delay: 0.5s;
         opacity: 1;
         overflow: visible;
         white-space: normal; } }
@@ -505,8 +490,7 @@ input {
   margin: 5px auto;
   margin-bottom: 15px;
   display: block;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; }
+  transition-delay: 0.5s; }
 
 .user__info__item {
   display: block;
@@ -524,8 +508,7 @@ input {
   margin-bottom: 10px; }
 
 .user-hidden {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
   opacity: 0; }
 
 .js-exmsp {
@@ -572,16 +555,13 @@ input {
   width: 400px;
   height: 290px;
   cursor: pointer;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; }
+  transition-delay: 0.5s; }
   .project:active, .project:hover {
     width: 400px;
     height: 450px;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s; }
+    transition-delay: 0.5s; }
     .project:active .project-hidden, .project:hover .project-hidden {
-      -webkit-transition-delay: 0.5s;
-              transition-delay: 0.5s;
+      transition-delay: 0.5s;
       opacity: 1;
       overflow: visible;
       white-space: normal; }
@@ -589,11 +569,9 @@ input {
     .project {
       width: 400px;
       height: 450px;
-      -webkit-transition-delay: 0.5s;
-              transition-delay: 0.5s; }
+      transition-delay: 0.5s; }
       .project .project-hidden {
-        -webkit-transition-delay: 0.5s;
-                transition-delay: 0.5s;
+        transition-delay: 0.5s;
         opacity: 1;
         overflow: visible;
         white-space: normal; } }
@@ -604,8 +582,7 @@ input {
   margin: 5px auto;
   margin-bottom: 15px;
   display: block;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; }
+  transition-delay: 0.5s; }
 
 .project__info__item {
   display: block;
@@ -623,6 +600,5 @@ input {
   margin-bottom: 10px; }
 
 .project-hidden {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
   opacity: 0; }
