@@ -59,8 +59,8 @@ gulp.task('clear', function () {
 		.pipe(plugins.rename('Index.cshtml'))
 		.pipe(gulp.dest(paths.project)); 
 
-	return gulp.src(files.build, { read: false })
-	   .pipe(plugins.clean({ force: true }));
+	//return gulp.src(files.build, { read: false })
+	//   .pipe(plugins.clean({ force: true }));
 });
 
 // Build Files
