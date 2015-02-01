@@ -18,7 +18,7 @@
     "gulp-uglify": "*",
     "gulp-util": "*",
 	"gulp-usemin": "~0.3.2",
-	"convertEncoding": "*"
+	"gulp-convert-encoding": "*"
   },
     "main": "gulpfile.js"
 }
