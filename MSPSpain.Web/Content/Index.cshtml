@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> #MSPSpain - Comunidad Técnica MSP España </title>
+    <meta name="description" content="Formado por estudiantes y antiguos estudiantes de los Microsoft Student Partners o MSP, nos encanta aprender y compartir: C#, JavaScript, TypeScript, Xaml...">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Content/build/css/styles.css"/>
+</head>
+<body ng-app="Msp">
+    <div class="main">
+        <div class="notification_panel">
+            <input type="checkbox" class="is-hidden" id="notification" value="null" />
+            <label for="notification" class="notification_panel__title">
+                Hola, nos alegra verte por aquí, sin embargo aún no hemos terminado. Estamos añadiendo todas las mejoras que podemos<br /><br />
+                Vuelve dentro de poco! Haz clic para cerrar el diálogo.
+            </label>
+        </div>
+        <header class="header">
+            <h1 class="header__title">MSPSpain</h1>
+            <input type="checkbox" class="check_responsive_menu is-hidden" id="responsive_menu" value="null" />
+            <nav class="header__menu" ng-controller="navigationController">
+                <ul class="header__menu__list">
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Inicio')" href="#/Inicio">Inicio</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/ListaMSP')" href="#/ListaMSP">Quiénes somos</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Proyectos')" href="#/Proyectos">Nuestros proyectos</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Mapa')" href="#/Mapa">Dónde estamos</a></li>
+                </ul>
+                <label class="header__menu__list__button icon-menu" for="responsive_menu"></label>
+            </nav>
+        </header>
+        <section ng-view class="content"></section>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="../Scripts/angular-github-repo-master/angular-github-repo.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=es-es">
+    </script>
+
+
+    <script src="Content/build/js/code.js"></script>
+</body>
+
+</html>

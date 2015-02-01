@@ -1,8 +1,8 @@
 @import 'variables';
 @import 'font-mixins';
 
-$fontDir: '../fonts/OpenSans/';
-$fontDirIcons: '../fonts/Icomoon/';
+$fontDir: '/Content/fonts/OpenSans/';
+$fontDirIcons: '/Content/fonts/Icomoon/';
 
 @include font-face(OpenSans, '#{$fontDir}Light/OpenSans-Light', 100);
 @include font-face(OpenSans, '#{$fontDir}LightItalic/OpenSans-LightItalic', 100, italic);

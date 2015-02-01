@@ -15,6 +15,7 @@ var files = {
 };
 
 var paths = {
+    general: '../',
 	build: 'build',
 	css: 'css',
 	project: '../Views/Home/',
@@ -78,13 +79,13 @@ gulp.task('buildFiles', function() {
 				js: /*[plugins.uglify()]*/[]
 			}
 		))
-		.pipe(gulp.dest(paths.build));
+		.pipe(gulp.dest(paths.general));
 });
 
 //relocate index
 gulp.task('relocateIndex',['buildFiles'], function () {
-    gulp.src(paths.build + '/Index.cshtml').pipe(gulp.dest(paths.project));
-    return gulp.src(paths.build + '/Index.cshtml').pipe(plugins.clean({ force: true }));
+    gulp.src(paths.general + '/Index.cshtml').pipe(gulp.dest(paths.project));
+    return gulp.src(paths.general + '/Index.cshtml').pipe(plugins.clean({ force: true }));
 });
 
 // Init watch
