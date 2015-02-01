@@ -64,7 +64,7 @@ gulp.task('clear', function () {
 });
 
 // Build Files
-gulp.task('buildFiles', function() {
+gulp.task('buildFiles', ['sass'], function () {
 	// Save index
 	gulp.src(files.index)
 		.pipe(plugins.clone())
