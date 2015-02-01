@@ -99,8 +99,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\build\css\styles.css" />
-    <Content Include="Content\build\js\code.js" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\FakeJSON\QuotesJSON.txt" />
     <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
