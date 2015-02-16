@@ -373,7 +373,7 @@
         "name": "Antoni",
         "lastname": "Cobos Domínguez",
         "years": [
-            2015
+            2014
         ],
         "city": "Sevilla",
         "university": "Universidad de Sevilla",
@@ -387,6 +387,31 @@
         "location": {
             "lon": 37.31416,
             "lat": -5.914922
+        }
+    },{
+        "id": 18,
+        "msp": false,
+        "name": "José Ángel",
+        "lastname": "Fernández",
+        "years": [
+            2009, 
+            2010, 
+            2011, 
+            2012, 
+            2013
+        ],
+        "city": "Madrid",
+        "university": "Universidad Politécnica de Madrid",
+        "email": "me@joseangelfernandez.es",
+        "skills": "Azure, Windows Server, System Center",
+        "twitter": "jangelfdez",
+        "linkedin": "jangelfdez",
+        "website": "www.joseangelfernandez.es",
+        "image": "https://pbs.twimg.com/profile_images/378800000024363771/042ae6ff0a421a63262045f6010ac79c.jpeg",
+        "thumbnail": "",
+        "location": {
+            "lon": 40.48850,
+            "lat": -3.70828
         }
     }
 ]
