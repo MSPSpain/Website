@@ -382,11 +382,11 @@
         "twitter": "",
         "linkedin": "",
         "website": "wigous.blog.com",
-        "image": "http://www.nalalu.com/231211/imagenes/Antoni-Cobos.jpg",
-        "thumbnail": "http://www.nalalu.com/231211/imagenes/Antoni-Cobos-1.jpg",
+        "image": "http://i.imgur.com/Or63CSp.png",
+        "thumbnail": "http://i.imgur.com/j0tsPps.png",
         "location": {
-            "lon": -5.914922,
-            "lat": 37.31416
+            "lon": 37.31416,
+            "lat": -5.914922
         }
     }
 ]
