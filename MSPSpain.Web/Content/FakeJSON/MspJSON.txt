@@ -366,5 +366,27 @@
             "lon": 40.547002,
             "lat": -3.6917273
         }
+    },
+    {
+        "id": 17,
+        "msp": true,
+        "name": "Antoni",
+        "lastname": "Cobos Domínguez",
+        "years": [
+            2015
+        ],
+        "city": "Sevilla",
+        "university": "Universidad de Sevilla",
+        "email": "etsiiantoni@outlook.es",
+        "skills": "C#,Windows 8,Windows Phone",
+        "twitter": "",
+        "linkedin": "",
+        "website": "wigous.blog.com",
+        "image": "http://www.nalalu.com/231211/imagenes/Antoni-Cobos.jpg",
+        "thumbnail": "http://www.nalalu.com/231211/imagenes/Antoni-Cobos-1.jpg",
+        "location": {
+            "lon": -5.914922,
+            "lat": 37.31416
+        }
     }
 ]
