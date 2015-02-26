@@ -460,7 +460,7 @@
         "linkedin": "juanluisruizcriado",
         "website": "",
         "image": "https://dl.dropboxusercontent.com/u/2177886/wcfEfvt.png",
-        "thumbnail": "https://dl.dropboxusercontent.com/u/2177886/wcfEfvt_thumb.png,
+        "thumbnail": "https://dl.dropboxusercontent.com/u/2177886/wcfEfvt_thumb.png",
         "location": {
             "lon": 36.715095,
             "lat": -4.476424
