@@ -13,6 +13,8 @@ using TestInitialize = NUnit.Framework.SetUpAttribute;
 using ClassCleanup = NUnit.Framework.TestFixtureTearDownAttribute;
 using ClassInitialize = NUnit.Framework.TestFixtureSetUpAttribute;
 using Assert = NUnit.Framework.Assert;
+using System.Net;
+using System.Drawing;
 #else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Drawing;
@@ -50,6 +52,7 @@ namespace MSPSpain.Tests
             var jsonFiles = Directory.GetFiles(JSONS_PATH, "*.json");
             foreach (var file in jsonFiles)
             {
+                Assert.IsFalse(AreIdsDuplicated(file), "There is a duplicated id on file " + file);
                 Assert.IsTrue(File.Exists(SCHEMAS_PATH + Path.GetFileNameWithoutExtension(file) + ".schema.json"), "There is no test for file: " + file);
                 Debug.Write("Testing file: " + Path.GetFileName(file));
                 TestJsonFile(@"Schema\" + Path.GetFileNameWithoutExtension(file) + ".schema.json", file);
@@ -99,5 +102,10 @@ namespace MSPSpain.Tests
                 return false;
             }
         }
+
+        /// <summary>
+        /// Checks if a Json arrays contains duplicated id values
+        /// </summary>
+        private Func<string, bool> AreIdsDuplicated = jsonFile => JArray.Parse(File.ReadAllText(jsonFile)).Select(x => x["id"].ToString()).GroupBy(x => x).Any(x => x.Count() > 1);
     }
 }
