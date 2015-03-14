@@ -1,0 +1,10 @@
+﻿{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": { "type": "number" },
+            "quote": { "type": "string" }
+        }
+    }
+}
