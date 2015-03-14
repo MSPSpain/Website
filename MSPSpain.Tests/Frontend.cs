@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Linq;
@@ -15,69 +16,53 @@ using Assert = NUnit.Framework.Assert;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 #endif
 
-// Remember if you do any change here, build this project in DebugNuint and push dll
-
 namespace MSPSpain.Tests
 {
+    /// <summary>
+    /// Holds tests relevant to the MSPSpain.Web
+    /// At this very moment, it's only being used to validate the format of the JSON files.
+    /// 
+    /// Shall you CHANGE something HERE, please build this project in DebugNuint and PUSH THE DLL!!!
+    /// </summary>
     [TestClass]
     public class Frontend
     {
-        string path = "../../../MSPSpain.Web/Content/FakeJSON/";
+        /// <summary>
+        /// Path in which the Json files are stored
+        /// </summary>
+        private static readonly string JSONS_PATH = "../../../MSPSpain.Web/Content/FakeJSON/";
 
+        /// <summary>
+        /// Path in which the schema files are stored
+        /// </summary>
+        private static readonly string SCHEMAS_PATH = "Schema/";
+
+        /// <summary>
+        /// Tests all Json files under JSONS_PATH with the schemas under SCHEMAS_PATH.
+        /// All Json files MUST have an schema!
+        /// </summary>
         [TestMethod]
-        public void MspJson()
+        public void TestJsonFiles()
         {
-            JsonSchema schema = JsonSchema.Parse(@"{
-                'type': 'array',
-                'items': {
-                    'type': 'object',
-                    'properties': {
-                        'id': {'type':'number'},
-                        'msp': {'type':'boolean'},
-                        'name': {'type':'string'},
-                        'lastname': {'type':'string'},
-                        'years': {'type':'array'},
-                        'city': {'type':'string'},
-                        'university': {'type':'string'},
-                        'email': {'type':'string'},
-                        'skills': {'type':'string'},
-                        'twitter': {'type':'string'},
-                        'linkedin': {'type':'string'},
-                        'image': {'type':'string'},
-                        'thumbnail': {'type':'string'},
-                        'location': {'type':'object'}
-                    }
-                }
-            }");
-
-            string json = File.ReadAllText(path + "MspJSON.txt");
-            JArray person = JArray.Parse(json);
-
-            bool valid = person.IsValid(schema);
-            Assert.IsTrue(valid);
-
+            var jsonFiles = Directory.GetFiles(JSONS_PATH, "*.json");
+            foreach (var file in jsonFiles)
+            {
+                Assert.IsTrue(File.Exists(SCHEMAS_PATH + Path.GetFileNameWithoutExtension(file) + ".schema.json"), "There is no test for file: " + file);
+                Debug.Write("Testing file: " + Path.GetFileName(file));
+                TestJsonFile(@"Schema\" + Path.GetFileNameWithoutExtension(file) + ".schema.json", file);
+                Debug.Write("Ok!");
+            }
         }
 
-        [TestMethod]
-        public void QuotesJson()
+        /// <summary>
+        /// Tests the given schema against an specific Json file
+        /// </summary>
+        /// <param name="schemaPath">Path to the schema to be used</param>
+        /// <param name="jsonPath">Path to the Json file to be tested</param>
+        private void TestJsonFile(string schemaPath, string jsonPath)
         {
-            JsonSchema schema = JsonSchema.Parse(@"{
-                'type': 'array',
-                'items': {
-                    'type': 'object',
-                    'properties': {
-                        'id': {'type':'number'},
-                        'quote': {'type':'string'}
-                    }
-                }
-            }");
-
-            string json = File.ReadAllText(path + "QuotesJSON.txt");
-            JArray person = JArray.Parse(json);
-
-            bool valid = person.IsValid(schema);
-            Assert.IsTrue(valid);
-
+            JsonSchema schema = JsonSchema.Parse(File.ReadAllText(schemaPath));
+            Assert.IsTrue(JArray.Parse(File.ReadAllText(jsonPath)).IsValid(schema), "Schema invalid for file: " + jsonPath);
         }
     }
 }
