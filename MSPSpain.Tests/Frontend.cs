@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Linq;
 
@@ -14,6 +15,8 @@ using ClassInitialize = NUnit.Framework.TestFixtureSetUpAttribute;
 using Assert = NUnit.Framework.Assert;
 #else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Drawing;
+using System.Net;
 #endif
 
 namespace MSPSpain.Tests
@@ -63,6 +66,38 @@ namespace MSPSpain.Tests
         {
             JsonSchema schema = JsonSchema.Parse(File.ReadAllText(schemaPath));
             Assert.IsTrue(JArray.Parse(File.ReadAllText(jsonPath)).IsValid(schema), "Schema invalid for file: " + jsonPath);
+        }
+
+        /// <summary>
+        /// Checks if the images being used by the MSPs exist, are accessible and are perfect squares
+        /// </summary>
+        [TestMethod]
+        public void ValidateImageSize()
+        {
+            var result = JArray.Parse(File.ReadAllText(JSONS_PATH + "Msp.json")).Select(x => new { Thumbnail = x["thumbnail"].ToString(), Image = x["image"].ToString(), Name = x["name"] + " " + x["lastname"] });
+            foreach (var msp in result)
+            {
+                Assert.IsTrue(CheckSquareImage(msp.Thumbnail), "Thumbnail for " + msp.Name + " is not valid!");
+                Assert.IsTrue(CheckSquareImage(msp.Image), "Image for " + msp.Name + " is not valid!");
+            }
+        }
+
+        /// <summary>
+        /// Checks if a remote image is a square
+        /// </summary>
+        /// <param name="url">URL to the remote image</param>
+        /// <returns>True if it is an square. False if it isn't or if it can't be accessed</returns>
+        private bool CheckSquareImage(string url)
+        {
+            try
+            {
+                var image = Image.FromStream((WebRequest.Create(url)).GetResponse().GetResponseStream());
+                return image.Height == image.Width;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }
