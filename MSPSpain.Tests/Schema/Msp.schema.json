@@ -16,7 +16,7 @@
             "linkedin": { "type": "string" },
             "image": { "type": "string" },
             "thumbnail": { "type": "string" },
-            "location": { "type": "object" }
+            "location": { "type": "object" } 
         }
     }
 }
