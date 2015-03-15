@@ -90,15 +90,15 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Schema\Msp.schema.json">
+    <EmbeddedResource Include="Schema\Msp.schema.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Schema\Projects.schema.json">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schema\Projects.schema.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Schema\Quotes.schema.json">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schema\Quotes.schema.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MSPSpain.Web\MSPSpain.Web.csproj">
