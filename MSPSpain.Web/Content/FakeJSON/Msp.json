@@ -1,0 +1,469 @@
+﻿[
+    {
+        "id": 1,
+        "msp": true,
+        "name": "Quique",
+        "lastname": "Fdez Guerra",
+        "years": [
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Barcelona",
+        "university": "La Salle Ramon Llull",
+        "email": "quique@ckgrafico.com",
+        "skills": "JavaScript, HTML5, Apps",
+        "twitter": "CKGrafico",
+        "linkedin": "enriquefdezguerra",
+        "website": "http://ckgrafico.com",
+        "image": "https://pbs.twimg.com/profile_images/456146832100691968/_BiG1BW_.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/456146832100691968/_BiG1BW__normal.jpeg",
+        "location": {
+            "lon": 41.408513,
+            "lat": 2.129308
+        }
+    },
+    {
+        "id": 2,
+        "msp": true,
+        "name": "Josevi",
+        "lastname": "Agulló Sánchez",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Elche",
+        "university": "Universidad de Alicante",
+        "email": "josevi.agullo@studentpartner.com",
+        "skills": "C#, Apps, MVVM",
+        "twitter": "Josevi_7",
+        "linkedin": "josevicenteagullo",
+        "website": "http://joseviagullo7.azurewebsites.net",
+        "image": "https://pbs.twimg.com/profile_images/555480126633160704/hDEjg1nx.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/555480126633160704/hDEjg1nx_normal.jpeg",
+        "location": {
+            "lon": 38.387807,
+            "lat": -0.51203
+        }
+    },
+    {
+        "id": 3,
+        "msp": true,
+        "name": "Ruben",
+        "lastname": "Fdez Souto",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Ourense",
+        "university": "UNED",
+        "email": "rfsouto@rfsouto.com",
+        "skills": "C#, Xamarin, Apps",
+        "twitter": "rf1souto",
+        "linkedin": "rfsouto",
+        "website": "http://rfsouto.com",
+        "image": "https://pbs.twimg.com/profile_images/486122574259032064/NmWoGoZQ.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/486122574259032064/NmWoGoZQ_normal.jpeg",
+        "location": {
+            "lon": 42.355214,
+            "lat": -7.880342
+        }
+    },
+    {
+        "id": 4,
+        "msp": true,
+        "name": "Diego",
+        "lastname": "Zapico Ferreiro",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Oviedo",
+        "university": "Universidad de Oviedo",
+        "email": "d.zapico@hotmail.com",
+        "skills": "Java, HTML5, SQL, JS",
+        "twitter": "zapy91",
+        "linkedin": "dzapico",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/533589809525030912/KGWdVM1Q.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/533589809525030912/KGWdVM1Q_normal.jpeg",
+        "location": {
+            "lon": 43.362011,
+            "lat": -5.846322
+        }
+    },
+    {
+        "id": 5,
+        "msp": true,
+        "name": "Javier",
+        "lastname": "Barcala Villarroel",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Alcala de Henares",
+        "university": "Universidad Rey Juan Carlos",
+        "email": "javier.barcala-villarroel@studentpartner.com",
+        "skills": "C#, Windows 8, Windows Phone",
+        "twitter": "15villarroel",
+        "linkedin": "javierbarcalavillarroel",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/378800000411960347/7101942f2bbd283c5edbd76df3531aa8.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/378800000411960347/7101942f2bbd283c5edbd76df3531aa8_normal.jpeg",
+        "location": {
+            "lon": 40.4820948,
+            "lat": -3.3640003
+        }
+    },
+    {
+        "id": 6,
+        "msp": true,
+        "name": "Pablo",
+        "lastname": "Varela",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Alicante",
+        "university": "Universidad de Alicante",
+        "email": "pablovargan@gmail.com",
+        "skills": "C#, Azure, Apps",
+        "twitter": "pablovargan",
+        "linkedin": "pablovargan",
+        "website": "http://pablovargan.com",
+        "image": "https://pbs.twimg.com/profile_images/497706391109238784/XX7Y4LuN.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/497706391109238784/XX7Y4LuN_normal.jpeg",
+        "location": {
+            "lon": 38.383807,
+            "lat": -0.51203
+        }
+    },
+    {
+        "id": 7,
+        "msp": true,
+        "name": "Joan Josep",
+        "lastname": "Escandell Riera",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Palma de Mallorca",
+        "university": "Universitat de les Illes Balears",
+        "email": "sayhi@johnnyjosep.com",
+        "skills": "C#, Windows 8, Windows Phone ",
+        "twitter": "johnnyjosep",
+        "linkedin": "joan-josep-escadell-riera",
+        "website": "http://www.johnnyjosep.com",
+        "image": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/485193649199022081/kt2ZKQS5_normal.jpeg",
+        "location": {
+            "lon": 39.583683,
+            "lat": 2.656207
+        }
+    },
+    {
+        "id": 8,
+        "msp": true,
+        "name": "Diego",
+        "lastname": "Martínez Gil",
+        "years": [
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Guadalajara",
+        "university": "Universidad de Alcalá",
+        "email": "diego.martinez@studentpartner.com",
+        "skills": "Windows 8, Windows Phone ",
+        "twitter": "diegomrtnzg",
+        "linkedin": "diegomartinezgil",
+        "website": "http://diegomrtnzg.azurewebsites.net/",
+        "image": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/455421749878747136/vEfR_dfw_normal.jpeg",
+        "location": {
+            "lon": 40.63,
+            "lat": -3.17
+        }
+    },
+    {
+        "id": 9,
+        "msp": true,
+        "name": "Sergio",
+        "lastname": "Gallardo Sales",
+        "years": [
+            2014
+        ],
+        "city": "Elche",
+        "university": "Universidad de Alicante",
+        "email": "maktub82dev@outlook.com",
+        "skills": "Windows 8, Windows Phone, C#",
+        "twitter": "maktub82",
+        "linkedin": "sergiogallardosales",
+        "website": "http://www.maktub82.com/",
+        "image": "https://media.licdn.com/media/p/3/005/01b/0ec/0813ae5.jpg",
+        "thumbnail": "https://media.licdn.com/media/p/3/005/01b/0ec/0813ae5.jpg",
+        "location": {
+            "lon": 40.26,
+            "lat": 3.41
+        }
+    },
+    {
+        "id": 10,
+        "msp": true,
+        "name": "Daniel",
+        "lastname": "Ávila Fernández",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Madrid",
+        "university": "Universidad Rey Juan Carlos",
+        "email": "daniel.avila@studentpartner.com",
+        "skills": "C#, C++, Web",
+        "twitter": "daviferna",
+        "linkedin": "DanielAvilaFernandez",
+        "website": "http://www.daviferna.es/",
+        "image": "https://pbs.twimg.com/profile_images/529702607158534144/BOOvTZ0J.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/529702607158534144/BOOvTZ0J_normal.jpeg",
+        "location": {
+            "lon": 40.335554,
+            "lat": -3.875462
+        }
+    },
+    {
+        "id": 11,
+        "msp": true,
+        "name": "José",
+        "lastname": "Fonseca López",
+        "years": [
+            2014
+        ],
+        "city": "Madrid",
+        "university": "Universidad Politécnica de Madrid",
+        "email": "",
+        "skills": "C#, Java",
+        "twitter": "EEvo92",
+        "linkedin": "José Fonseca López",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/471699827034578944/zmoIn0wc.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/471699827034578944/zmoIn0wc_normal.jpeg",
+        "location": {
+            "lon": 40.4072622,
+            "lat": -3.6362286
+        }
+    },
+    {
+        "id": 12,
+        "msp": true,
+        "name": "Gregorio",
+        "lastname": "Juliana Quirós",
+        "years": [
+            2014
+        ],
+        "city": "Madrid",
+        "university": "UPM",
+        "email": "gregojquiros@ieee.org",
+        "skills": "C#, Java, Apps, Robots",
+        "twitter": "GregUndercover",
+        "linkedin": "",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/378800000850784677/2148a3fd269b73420c42a6fb51dc3105.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/378800000850784677/2148a3fd269b73420c42a6fb51dc3105_normal.jpeg",
+        "location": {
+            "lon": 40.4438641,
+            "lat": -3.6964803
+        }
+    },
+    {
+        "id": 13,
+        "msp": true,
+        "name": "Arcadio",
+        "lastname": "Garcia Salvadores",
+        "years": [
+            2014
+        ],
+        "city": "Madrid",
+        "university": "Universidad Autonoma de Madrid",
+        "email": "arcadio.garcia@studentpartner.com",
+        "skills": "Javascript, C, Windows 8, Windows Phone ",
+        "twitter": "arcadio_g_s",
+        "linkedin": "arcadiogarcia",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/569528988427513856/xWUhCGIf.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/569528988427513856/xWUhCGIf_normal.jpeg",
+        "location": {
+            "lon": 40.547067,
+            "lat": -3.692058
+        }
+    },
+    {
+        "id": 14,
+        "msp": true,
+        "name": "Jorge",
+        "lastname": "Andrés de las Cuevas",
+        "years": [
+            2013,
+            2014
+        ],
+        "city": "Santander",
+        "university": "Universidad de Cantabria",
+        "email": "contacto@jorgeac.com",
+        "skills": "JAVA, Aplicaciones web, .NET",
+        "twitter": "gitoac",
+        "linkedin": "jorge-andrés-de-las-cuevas",
+        "website": "http://jorgeac.com",
+        "image": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10530736_704085702992381_7033193699268880803_n.jpg?oh=1d204b8e02663e8bac8c6612b371adc4&oe=550D7DD4&__gda__=1426201864_477a2f16cb5f114545f999c89a49d584",
+        "thumbnail": "",
+        "location": {
+            "lon": 43.42975,
+            "lat": -3.927352
+        }
+    },
+    {
+        "id": 15,
+        "msp": true,
+        "name": "Jorge",
+        "lastname": "Salmerón Domínguez",
+        "years": [
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Guadalajara",
+        "university": "Universidad de Alcalá",
+        "email": "jorge.salmeron@studentpartner.com",
+        "skills": "IT Network, Windows Phone, App Studio",
+        "twitter": "JorgeSalme",
+        "linkedin": "jorgesalme",
+        "website": "",
+        "image": "https://pbs.twimg.com/profile_images/555719019504730112/wCHeADq0.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/555719019504730112/wCHeADq0_normal.jpeg",
+        "location": {
+            "lon": 40.632637,
+            "lat": -3.165924
+        }
+    },
+     {
+        "id": 16,
+        "msp": false,
+        "name": "Roberto",
+        "lastname": "Luis Bisbé",
+        "years": [
+            2011,
+            2012,
+            2013
+        ],
+        "city": "Alcobendas",
+        "university": "Universidad Autónoma de Madrid",
+        "email": "roberto.luis@rlbisbe.net",
+        "skills": "Windows 8, Windows Phone, ASP.net, Javascript",
+        "twitter": "rlbisbe",
+        "linkedin": "rlbisbe",
+        "website": "http://rlbisbe.net",
+        "image": "https://pbs.twimg.com/profile_images/498751989862236160/mQpbtFiq_400x400.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/498751989862236160/mQpbtFiq.jpeg",
+        "location": {
+            "lon": 40.547002,
+            "lat": -3.6917273
+        }
+    },
+    {
+        "id": 17,
+        "msp": true,
+        "name": "Antoni",
+        "lastname": "Cobos Domínguez",
+        "years": [
+            2014
+        ],
+        "city": "Sevilla",
+        "university": "Universidad de Sevilla",
+        "email": "etsiiantoni@outlook.es",
+        "skills": "C#,Windows 8,Windows Phone",
+        "twitter": "",
+        "linkedin": "",
+        "website": "wigous.blog.com",
+        "image": "http://i.imgur.com/Or63CSp.png",
+        "thumbnail": "http://i.imgur.com/j0tsPps.png",
+        "location": {
+            "lon": 37.31416,
+            "lat": -5.914922
+        }
+    },{
+        "id": 18,
+        "msp": false,
+        "name": "José Ángel",
+        "lastname": "Fernández",
+        "years": [
+            2009, 
+            2010, 
+            2011, 
+            2012, 
+            2013
+        ],
+        "city": "Madrid",
+        "university": "Universidad Politécnica de Madrid",
+        "email": "me@joseangelfernandez.es",
+        "skills": "Azure, Windows Server, System Center",
+        "twitter": "jangelfdez",
+        "linkedin": "jangelfdez",
+        "website": "www.joseangelfernandez.es",
+        "image": "https://pbs.twimg.com/profile_images/378800000024363771/042ae6ff0a421a63262045f6010ac79c.jpeg",
+        "thumbnail": "",
+        "location": {
+            "lon": 40.48850,
+            "lat": -3.70828
+        }
+    },
+    {
+        "id": 19,
+        "msp": true,
+        "name": "Gorka",
+        "lastname": "Madariaga",
+        "years": [
+            2010,
+            2011,
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Madrid",
+        "university": "Universidad Politécnica de Madrid",
+        "email": "gorka.madariaga@studentpartner.com",
+        "skills": "C#, XAML, JavaScript, HTML5, CSS3, Apps, Azure",
+        "twitter": "Gk_8",
+        "linkedin": "gorka-madariaga-núñez",
+        "website": "http://alwaysontime.azurewebsites.net/",
+        "image": "https://pbs.twimg.com/profile_images/417839163317047296/ZMDJ-EBL.jpeg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/417839163317047296/ZMDJ-EBL.jpeg",
+        "location": {
+            "lon": 40.416919,
+            "lat": -3.707689
+        }
+    },
+    {
+        "id": 20,
+        "msp": true,
+        "name": "Juan Luis",
+        "lastname": "Ruiz Criado",
+        "years": [
+            2010,
+            2011,
+            2012,
+            2013,
+            2014
+        ],
+        "city": "Málaga",
+        "university": "Universidad de Málaga",
+        "email": "juan.ruiz@studentpartner.com",
+        "skills": "JavaScript, HTML5, CSS3, Web Apps",
+        "twitter": "huanglu",
+        "linkedin": "juanluisruizcriado",
+        "website": "",
+        "image": "https://dl.dropboxusercontent.com/u/2177886/wcfEfvt.png",
+        "thumbnail": "https://dl.dropboxusercontent.com/u/2177886/wcfEfvt_thumb.png",
+        "location": {
+            "lon": 36.715095,
+            "lat": -4.476424
+        }
+    }
+]

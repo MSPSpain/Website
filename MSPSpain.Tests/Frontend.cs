@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Linq;
 
@@ -11,73 +13,104 @@ using TestInitialize = NUnit.Framework.SetUpAttribute;
 using ClassCleanup = NUnit.Framework.TestFixtureTearDownAttribute;
 using ClassInitialize = NUnit.Framework.TestFixtureSetUpAttribute;
 using Assert = NUnit.Framework.Assert;
+using System.Net;
+using System.Drawing;
 #else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Drawing;
+using System.Net;
 #endif
-
-// Remember if you do any change here, build this project in DebugNuint and push dll
 
 namespace MSPSpain.Tests
 {
+    /// <summary>
+    /// Holds tests relevant to the MSPSpain.Web
+    /// At this very moment, it's only being used to validate the format of the JSON files.
+    /// 
+    /// Shall you CHANGE something HERE, please build this project in DebugNuint and PUSH THE DLL!!!
+    /// </summary>
     [TestClass]
     public class Frontend
     {
-        string path = "../../../MSPSpain.Web/Content/FakeJSON/";
+        /// <summary>
+        /// Path in which the Json files are stored
+        /// </summary>
+        private static readonly string JSONS_PATH = "../../../MSPSpain.Web/Content/FakeJSON/";
 
+        /// <summary>
+        /// Path in which the schema files are stored
+        /// </summary>
+        private static readonly string SCHEMAS_PATH = "Schema";
+
+        /// <summary>
+        /// Tests all Json files under JSONS_PATH with the schemas under SCHEMAS_PATH.
+        /// All Json files MUST have an schema!
+        /// </summary>
         [TestMethod]
-        public void MspJson()
+        public void TestJsonFiles()
         {
-            JsonSchema schema = JsonSchema.Parse(@"{
-                'type': 'array',
-                'items': {
-                    'type': 'object',
-                    'properties': {
-                        'id': {'type':'number'},
-                        'msp': {'type':'boolean'},
-                        'name': {'type':'string'},
-                        'lastname': {'type':'string'},
-                        'years': {'type':'array'},
-                        'city': {'type':'string'},
-                        'university': {'type':'string'},
-                        'email': {'type':'string'},
-                        'skills': {'type':'string'},
-                        'twitter': {'type':'string'},
-                        'linkedin': {'type':'string'},
-                        'image': {'type':'string'},
-                        'thumbnail': {'type':'string'},
-                        'location': {'type':'object'}
-                    }
-                }
-            }");
-
-            string json = File.ReadAllText(path + "MspJSON.txt");
-            JArray person = JArray.Parse(json);
-
-            bool valid = person.IsValid(schema);
-            Assert.IsTrue(valid);
-
+            var jsonFiles = Directory.GetFiles(JSONS_PATH, "*.json");
+            foreach (var file in jsonFiles)
+            {
+                string schemaFilePath = Path.Combine(SCHEMAS_PATH, Path.GetFileNameWithoutExtension(file) + ".schema.json");
+                Assert.IsTrue(File.Exists(schemaFilePath), "There is no test for file: " + file);
+                Assert.IsFalse(AreIdsDuplicated(file), "There is a duplicated id on file " + file);
+                Debug.Write("Testing file: " + Path.GetFileName(file));
+                TestJsonFile(schemaFilePath, file);
+                Debug.Write("Ok!");
+            }
         }
 
+        /// <summary>
+        /// Checks if the images being used by the MSPs exist, are accessible and are perfect squares
+        /// </summary>
         [TestMethod]
-        public void QuotesJson()
+        public void ValidateImageSize()
         {
-            JsonSchema schema = JsonSchema.Parse(@"{
-                'type': 'array',
-                'items': {
-                    'type': 'object',
-                    'properties': {
-                        'id': {'type':'number'},
-                        'quote': {'type':'string'}
-                    }
-                }
-            }");
-
-            string json = File.ReadAllText(path + "QuotesJSON.txt");
-            JArray person = JArray.Parse(json);
-
-            bool valid = person.IsValid(schema);
-            Assert.IsTrue(valid);
-
+            var result = JArray.Parse(File.ReadAllText(JSONS_PATH + "Msp.json")).Select(x => new { Thumbnail = x["thumbnail"].ToString(), Image = x["image"].ToString(), Name = x["name"] + " " + x["lastname"] });
+            foreach (var msp in result)
+            {
+                Assert.IsTrue(CheckSquareImage(msp.Thumbnail), "Thumbnail for " + msp.Name + " is not valid!");
+                Assert.IsTrue(CheckSquareImage(msp.Image), "Image for " + msp.Name + " is not valid!");
+            }
         }
+
+        /// <summary>
+        /// Tests the given schema against an specific Json file
+        /// </summary>
+        /// <param name="schemaPath">Path to the schema to be used</param>
+        /// <param name="jsonPath">Path to the Json file to be tested</param>
+        private void TestJsonFile(string schemaPath, string jsonPath)
+        {
+            JsonSchema schema = JsonSchema.Parse(File.ReadAllText(schemaPath));
+            Assert.IsTrue(JArray.Parse(File.ReadAllText(jsonPath)).IsValid(schema), "Schema invalid for file: " + jsonPath);
+        }
+
+        /// <summary>
+        /// Checks if a remote image is a square
+        /// </summary>
+        /// <param name="url">URL to the remote image</param>
+        /// <returns>True if it is an square. False if it isn't or if it can't be accessed</returns>
+        private bool CheckSquareImage(string url)
+        {
+            try
+            {
+                var image = Image.FromStream((WebRequest.Create(url)).GetResponse().GetResponseStream());
+                return image.Height == image.Width;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Checks if a Json arrays contains duplicated id values
+        /// </summary>
+        private Func<string, bool> AreIdsDuplicated =
+            jsonFile => JArray.Parse(File.ReadAllText(jsonFile))
+                .Select(x => x["id"].ToString())
+                .GroupBy(x => x)
+                .Any(x => x.Count() > 1);
     }
 }

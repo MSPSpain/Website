@@ -100,9 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\main.css" />
-    <Content Include="Content\FakeJSON\QuotesJSON.txt" />
-    <Content Include="Content\FakeJSON\ProjectsJSON.txt" />
-    <Content Include="Content\FakeJSON\MspJSON.txt" />
+    <None Include="Content\FakeJSON\Quotes.json" />
+    <None Include="Content\FakeJSON\Projects.json" />
+    <None Include="Content\FakeJSON\Msp.json" />
     <Content Include="Content\fonts\Icomoon\icomoon.svg" />
     <Content Include="Content\fonts\OpenSans\BoldItalic\OpenSans-BoldItalic.svg" />
     <Content Include="Content\fonts\OpenSans\Bold\OpenSans-Bold.svg" />
