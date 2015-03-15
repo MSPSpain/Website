@@ -35,7 +35,7 @@ namespace MSPSpain.Tests
         /// <summary>
         /// Path in which the schema files are stored
         /// </summary>
-        private static readonly string SCHEMAS_PATH = "Schema/";
+        private static readonly string SCHEMAS_PATH = "Schema";
 
         /// <summary>
         /// Tests all Json files under JSONS_PATH with the schemas under SCHEMAS_PATH.
@@ -47,9 +47,10 @@ namespace MSPSpain.Tests
             var jsonFiles = Directory.GetFiles(JSONS_PATH, "*.json");
             foreach (var file in jsonFiles)
             {
-                Assert.IsTrue(File.Exists(SCHEMAS_PATH + Path.GetFileNameWithoutExtension(file) + ".schema.json"), "There is no test for file: " + file);
+                string schemaFilePath = Path.Combine(SCHEMAS_PATH, Path.GetFileNameWithoutExtension(file) + ".schema.json");
+                Assert.IsTrue(File.Exists(schemaFilePath), "There is no test for file: " + file);
                 Debug.Write("Testing file: " + Path.GetFileName(file));
-                TestJsonFile(@"Schema\" + Path.GetFileNameWithoutExtension(file) + ".schema.json", file);
+                TestJsonFile(schemaFilePath, file);
                 Debug.Write("Ok!");
             }
         }
