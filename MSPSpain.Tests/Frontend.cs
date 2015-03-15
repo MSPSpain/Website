@@ -87,6 +87,21 @@ namespace MSPSpain.Tests
         }
 
         /// <summary>
+
+        /// Checks if the images being used by the MSPs exist, are accessible and are perfect squares
+        /// </summary>
+        [TestMethod]
+        public void ValidateImageSize()
+        {
+            var result = JArray.Parse(File.ReadAllText(JSONS_PATH + "Msp.json")).Select(x => new { Thumbnail = x["thumbnail"].ToString(), Image = x["image"].ToString(), Name = x["name"] + " " + x["lastname"] });
+            foreach (var msp in result)
+            {
+                Assert.IsTrue(CheckSquareImage(msp.Thumbnail), "Thumbnail for " + msp.Name + " is not valid!");
+                Assert.IsTrue(CheckSquareImage(msp.Image), "Image for " + msp.Name + " is not valid!");
+            }
+        }
+
+        /// <summary>
         /// Checks if a remote image is a square
         /// </summary>
         /// <param name="url">URL to the remote image</param>
@@ -107,7 +122,7 @@ namespace MSPSpain.Tests
         /// <summary>
         /// Checks if a Json arrays contains duplicated id values
         /// </summary>
-        private Func<string, bool> AreIdsDuplicated = 
+        private Func<string, bool> AreIdsDuplicated =
             jsonFile => JArray.Parse(File.ReadAllText(jsonFile))
                 .Select(x => x["id"].ToString())
                 .GroupBy(x => x)
