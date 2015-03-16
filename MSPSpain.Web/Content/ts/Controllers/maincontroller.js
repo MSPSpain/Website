@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var MainController = (function () {
         function MainController($scope, $http) {
             this.$scope = $scope;
@@ -14,19 +13,16 @@ var Msp;
         }
         MainController.prototype.getQuotesList = function () {
             var _this = this;
-            this.$http.get('/Content/FakeJSON/QuotesJSON.txt').success(function (quotesJSON) {
+            this.$http.get('/Content/FakeJSON/QuotesJSON.json').success(function (quotesJSON) {
                 for (var i = 0; i < quotesJSON.length; i++) {
                     _this.quotes[i] = quotesJSON[i];
                 }
-
                 _this.updateRandomQuote();
             });
         };
-
         MainController.prototype.getRandomQuote = function () {
             return this.quotes[Math.floor(Math.random() * this.quotes.length)].quote;
         };
-
         MainController.prototype.updateRandomQuote = function () {
             this.$scope.randomQuote = this.getRandomQuote();
         };
@@ -38,4 +34,4 @@ var Msp;
     })();
     Msp.MainController = MainController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=MainController.js.map
+//# sourceMappingURL=maincontroller.js.map
