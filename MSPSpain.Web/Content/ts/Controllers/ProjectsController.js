@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var ProjectsController = (function () {
         function ProjectsController($scope, $http) {
             this.$scope = $scope;
@@ -13,7 +12,7 @@ var Msp;
         }
         ProjectsController.prototype.getMspList = function () {
             var _this = this;
-            this.$http.get('/Content/FakeJSON/ProjectsJSON.txt').success(function (projectsJSON) {
+            this.$http.get('/Content/FakeJSON/ProjectsJSON.json').success(function (projectsJSON) {
                 for (var i = 0; i < projectsJSON.length; i++) {
                     _this.projects[i] = projectsJSON[i];
                 }
@@ -27,4 +26,4 @@ var Msp;
     })();
     Msp.ProjectsController = ProjectsController;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=ProjectsController.js.map
+//# sourceMappingURL=projectscontroller.js.map
