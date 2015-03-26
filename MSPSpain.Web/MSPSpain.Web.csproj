@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\build\code.js" />
+    <Content Include="Content\build\Entypo-webfont.svg" />
     <Content Include="Content\build\styles.css" />
     <Content Include="Content\FakeJSON\Quotes.txt" />
     <Content Include="Content\FakeJSON\Projects.txt" />
@@ -168,6 +169,9 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Content\build\Entypo-webfont.eot" />
+    <Content Include="Content\build\Entypo-webfont.ttf" />
+    <Content Include="Content\build\Entypo-webfont.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

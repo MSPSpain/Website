@@ -11,8 +11,8 @@
     <!-- CSS -->
     <!-- build:css(../../MSPSpain.Web/) Content/build/styles.css -->
     <!-- inject:css -->
-               <link rel="stylesheet" href="Content/css/main.css">
-              <!-- endinject -->
+                <link rel="stylesheet" href="Content/css/main.css">
+               <!-- endinject -->
     <!-- endbuild -->
 </head>
 <body ng-app="Msp">
