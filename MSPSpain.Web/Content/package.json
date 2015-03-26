@@ -14,7 +14,7 @@
     "gulp-inject": "*",
     "gulp-minify-css": "*",
     "gulp-minify-html": "~0.1.0",
-    "node-sass": "1.1.4",
+    "node-sass": "*",
     "gulp-sass": "1.2.4",
     "gulp-uglify": "*",
     "gulp-util": "*",
