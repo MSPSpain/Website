@@ -13,7 +13,7 @@ var Msp;
         }
         MainController.prototype.getQuotesList = function () {
             var _this = this;
-            this.$http.get('/Content/FakeJSON/QuotesJSON.json').success(function (quotesJSON) {
+            this.$http.get('/Content/FakeJSON/Quotes.txt').success(function (quotesJSON) {
                 for (var i = 0; i < quotesJSON.length; i++) {
                     _this.quotes[i] = quotesJSON[i];
                 }

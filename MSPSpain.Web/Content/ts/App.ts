@@ -19,7 +19,8 @@ module Msp {
         .controller('mapController', Msp.MapController)
         .controller('mspListController', Msp.MspListController)
         .controller('projectsController', Msp.ProjectsController)
-        .config(['$routeProvider', routes]);
+        .config(['$routeProvider', routes])
+        .config(['$locationProvider', location]);
 
     // Router configuration
     function routes($routeProvider: ng.route.IRouteProvider) {
@@ -43,6 +44,11 @@ module Msp {
             .otherwise({
                 redirectTo: '/Inicio'
             });
+    }
+
+    // Location configuration
+    function location($locationProvider: ng.ILocationProvider) {
+        $locationProvider.html5Mode(true);
     }
 
 }

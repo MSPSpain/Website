@@ -12,7 +12,7 @@ var Msp;
         }
         MspListController.prototype.getMspList = function () {
             var _this = this;
-            this.$http.get('/Content/FakeJSON/MspJSON.json').success(function (usersJSON) {
+            this.$http.get('/Content/FakeJSON/Msp.txt').success(function (usersJSON) {
                 for (var i = 0; i < usersJSON.length; i++) {
                     _this.users[i] = usersJSON[i];
                 }

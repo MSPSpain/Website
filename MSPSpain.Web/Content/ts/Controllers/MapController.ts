@@ -39,7 +39,7 @@ module Msp {
             });
 
             // Add Msp Pushpins
-            $http.get('/Content/FakeJSON/MspJSON.txt').success(this.addUsersPushpins.bind(this));
+            $http.get('/Content/FakeJSON/Msp.txt').success(this.addUsersPushpins.bind(this));
             
         }
 
