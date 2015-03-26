@@ -10,7 +10,7 @@ var Msp;
     };
 
     // Angular App
-    angular.module('Msp', ['ngRoute', 'githubRepo']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]);
+    angular.module('Msp', ['ngRoute', 'githubRepo']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]).config(['$locationProvider', location]);
 
     // Router configuration
     function routes($routeProvider) {
@@ -29,6 +29,11 @@ var Msp;
         }).otherwise({
             redirectTo: '/Inicio'
         });
+    }
+
+    // Location configuration
+    function location($locationProvider) {
+        $locationProvider.html5Mode(true);
     }
 })(Msp || (Msp = {}));
 //# sourceMappingURL=App.js.map
