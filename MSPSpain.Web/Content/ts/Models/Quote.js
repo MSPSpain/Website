@@ -1,8 +1,7 @@
-﻿/// <reference path="../imports.ts" />
+/// <reference path="../imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     var Quote = (function () {
         function Quote() {
         }
@@ -10,4 +9,4 @@ var Msp;
     })();
     Msp.Quote = Quote;
 })(Msp || (Msp = {}));
-//# sourceMappingURL=Quote.js.map
+//# sourceMappingURL=quote.js.map

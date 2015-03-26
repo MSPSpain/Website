@@ -1,17 +1,14 @@
-﻿/// <reference path="imports.ts" />
+/// <reference path="imports.ts" />
 var Msp;
 (function (Msp) {
     'use strict';
-
     // App configuration object
     Msp.config = {
         api: {},
         viewsPath: '/Content/Views/'
     };
-
     // Angular App
     angular.module('Msp', ['ngRoute', 'githubRepo']).controller('navigationController', Msp.NavigationController).controller('mainController', Msp.MainController).controller('mapController', Msp.MapController).controller('mspListController', Msp.MspListController).controller('projectsController', Msp.ProjectsController).config(['$routeProvider', routes]).config(['$locationProvider', location]);
-
     // Router configuration
     function routes($routeProvider) {
         $routeProvider.when('/Inicio', {
@@ -30,7 +27,6 @@ var Msp;
             redirectTo: '/Inicio'
         });
     }
-
     // Location configuration
     function location($locationProvider) {
         $locationProvider.html5Mode(true);
