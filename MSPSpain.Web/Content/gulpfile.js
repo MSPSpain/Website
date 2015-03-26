@@ -76,7 +76,7 @@ gulp.task('buildFiles', ['sass', 'inject', 'default'], function () {
 		.pipe(plugins.usemin(
 			{
 				css: [plugins.minifyCss()],
-				js: /*[plugins.uglify()]*/[]
+				js: [plugins.uglify()]
 			}
 		))
         .pipe(plugins.convertEncoding({ to: 'utf8' }))
