@@ -7,6 +7,7 @@
     <title> #MSPSpain - Comunidad T&eacute;cnica MSP España </title>
     <meta name="description" content="Formado por estudiantes y antiguos estudiantes de los Microsoft Student Partners o MSP, nos encanta aprender y compartir: C#, JavaScript, TypeScript, Xaml...">
 
+    <base href="/" />
     <!-- CSS -->
     <!-- build:css(../../wwwroot/) Content/build/styles.css -->
     <!-- inject:css -->
@@ -28,10 +29,10 @@
             <input type="checkbox" class="check_responsive_menu is-hidden" id="responsive_menu" value="null" />
             <nav class="header__menu" ng-controller="navigationController">
                 <ul class="header__menu__list">
-                    <li class="header__menu__list__item"> <a ng-class="classActive('/Inicio')" href="#/Inicio">Inicio</a></li>
-                    <li class="header__menu__list__item"> <a ng-class="classActive('/ListaMSP')" href="#/ListaMSP">Qui&eacute;nes somos</a></li>
-                    <li class="header__menu__list__item"> <a ng-class="classActive('/Proyectos')" href="#/Proyectos">Nuestros proyectos</a></li>
-                    <li class="header__menu__list__item"> <a ng-class="classActive('/Mapa')" href="#/Mapa">D&oacute;nde estamos</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Inicio')" href="/Inicio">Inicio</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/ListaMSP')" href="/ListaMSP">Qui&eacute;nes somos</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Proyectos')" href="/Proyectos">Nuestros proyectos</a></li>
+                    <li class="header__menu__list__item"> <a ng-class="classActive('/Mapa')" href="/Mapa">D&oacute;nde estamos</a></li>
                 </ul>
                 <label class="header__menu__list__button icon-menu" for="responsive_menu"></label>
             </nav>
