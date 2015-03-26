@@ -11,8 +11,8 @@
     <!-- CSS -->
     <!-- build:css(../../MSPSpain.Web/) Content/build/styles.css -->
     <!-- inject:css -->
-         <link rel="stylesheet" href="Content/css/main.css">
-        <!-- endinject -->
+               <link rel="stylesheet" href="Content/css/main.css">
+              <!-- endinject -->
     <!-- endbuild -->
 </head>
 <body ng-app="Msp">
@@ -41,14 +41,15 @@
     </div>
 
     <!-- JavaScript files -->
-    <script src="../Scripts/angular.min.js"></script>
-    <script src="../Scripts/angular-route.min.js"></script>
-    <script src="../Scripts/angular-github-repo-master/angular-github-repo.js"></script>
+    
     <script charset="UTF-8" type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=es-es">
     </script>
 
 
     <!-- build:js(../../MSPSpain.Web/) Content/build/code.js -->
+	<script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-github-repo-master/angular-github-repo.js"></script>
     <!-- inject:js -->
     <script src="Content/ts/Models/Project.js"></script>
     <script src="Content/ts/Models/Quote.js"></script>

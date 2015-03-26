@@ -7,7 +7,7 @@
 'use strict';
 
 angular.module('githubRepo', [])
-  .factory('GitHubRepo', function ($http, $q, $injector) {
+  .factory('GitHubRepo', ['$http', '$q', '$injector', function ($http, $q, $injector) {
 
     var githubApi = 'https://api.github.com/repos/'
       , $localStorage = $injector.has('$localStorage') ? $injector.get('$localStorage') : null;
@@ -77,9 +77,9 @@ angular.module('githubRepo', [])
     };
 
     return factory;
-  })
+  }])
 
-  .directive('githubRepo', function(GitHubRepo, $parse) {
+  .directive('githubRepo', ['GitHubRepo', '$parse', function(GitHubRepo, $parse) {
     return {
       restrict: 'A',
       scope: true,
@@ -127,5 +127,5 @@ angular.module('githubRepo', [])
           });
       }
     };
-  });
+  }]);
 
