@@ -480,6 +480,10 @@ input {
 .notification_panel input[type=checkbox]:checked + label {
   display: none; }
 
+.block {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .page {
   width: 100%;
   margin: 0;
