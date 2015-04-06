@@ -118,6 +118,12 @@
     <Content Include="Content\images\headers\msps_original.jpg" />
     <Content Include="Content\images\headers\stairs_original.jpg" />
     <Content Include="Content\images\headers\surface_original.jpg" />
+    <Content Include="Content\images\Icons\berry.png" />
+    <Content Include="Content\images\Icons\cordova.png" />
+    <Content Include="Content\images\Icons\kinnect.png" />
+    <Content Include="Content\images\Icons\studio.png" />
+    <Content Include="Content\images\Icons\unity.png" />
+    <Content Include="Content\images\Icons\xamarin.png" />
     <Content Include="Content\ts\App.js" />
     <Content Include="Content\ts\Controllers\maincontroller.js" />
     <Content Include="Content\ts\Controllers\MapController.js" />
@@ -217,7 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\Icons\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
