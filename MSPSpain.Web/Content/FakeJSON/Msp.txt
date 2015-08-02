@@ -465,5 +465,27 @@
             "lon": 36.715095,
             "lat": -4.476424
         }
+    },
+    {
+        "id": 21,
+        "msp": true,
+        "name": "Juan Pedro",
+        "lastname": "Ramos Gómez",
+        "years": [
+            2015
+        ],
+        "city": "Almería",
+        "university": "Universidad de Almería",
+        "email": "contacto@jotaperamez.org",
+        "skills": "Java, HTML5, Web Forms, C#",
+        "twitter": "Jotaperamez",
+        "linkedin": "juanpedroramosgomez",
+        "website": "http://jotaperamezwordpress.azurewebsites.net",
+        "image": "https://pbs.twimg.com/profile_images/624528847782871040/eeeWF1LG.jpg",
+        "thumbnail": "http://s2.subirimagenes.com/otros/previo/thump_9430659thummap.jpg",
+        "location": {
+            "lon": 37.2153419,
+            "lat": -2.0673396
+        }
     }
 ]
