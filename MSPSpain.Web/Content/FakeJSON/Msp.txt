@@ -280,17 +280,18 @@
         "name": "Arcadio",
         "lastname": "Garcia Salvadores",
         "years": [
-            2014
+            2014,
+            2015
         ],
         "city": "Madrid",
         "university": "Universidad Autonoma de Madrid",
         "email": "arcadio.garcia@studentpartner.com",
-        "skills": "Javascript, C, Windows 8, Windows Phone ",
+        "skills": "Javascript, C, Windows 10, Universal Windows Platform, Windows 8, Windows Phone ",
         "twitter": "arcadio_g_s",
         "linkedin": "arcadiogarcia",
-        "website": "",
-        "image": "https://pbs.twimg.com/profile_images/569528988427513856/xWUhCGIf.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/569528988427513856/xWUhCGIf_normal.jpeg",
+        "website": "http://arcadiogarcia.azurewebsites.net/",
+        "image": "https://avatars0.githubusercontent.com/u/9416356",
+        "thumbnail": "https://avatars0.githubusercontent.com/u/9416356?v=3&s=48",
         "location": {
             "lon": 40.547067,
             "lat": -3.692058
