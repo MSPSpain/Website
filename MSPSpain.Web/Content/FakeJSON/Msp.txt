@@ -407,7 +407,7 @@
         "twitter": "jangelfdez",
         "linkedin": "jangelfdez",
         "website": "www.joseangelfernandez.es",
-        "image": "https://pbs.twimg.com/profile_images/378800000024363771/042ae6ff0a421a63262045f6010ac79c.jpeg",
+        "image": "https://pbs.twimg.com/profile_images/623766849436528640/59IdT7Ud.jpg",
         "thumbnail": "",
         "location": {
             "lon": 40.48850,
