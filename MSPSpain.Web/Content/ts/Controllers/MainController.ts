@@ -23,7 +23,7 @@ module Msp {
         }
 
         getQuotesList() {
-            this.$http.get('/Content/FakeJSON/QuotesJSON.txt').success((quotesJSON: any) => {
+            this.$http.get('/Content/FakeJSON/Quotes.txt').success((quotesJSON: any) => {
                 for (var i: number = 0; i < quotesJSON.length; i++) {
                     this.quotes[i] = <Quote>quotesJSON[i];
                 }

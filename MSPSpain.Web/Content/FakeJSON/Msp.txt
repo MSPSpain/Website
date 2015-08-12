@@ -1,7 +1,7 @@
 ﻿[
     {
         "id": 1,
-        "msp": true,
+        "msp": false,
         "name": "Quique",
         "lastname": "Fdez Guerra",
         "years": [
@@ -25,7 +25,7 @@
     },
     {
         "id": 2,
-        "msp": true,
+        "msp": false,
         "name": "Josevi",
         "lastname": "Agulló Sánchez",
         "years": [
@@ -187,7 +187,7 @@
     },
     {
         "id": 9,
-        "msp": true,
+        "msp": false,
         "name": "Sergio",
         "lastname": "Gallardo Sales",
         "years": [
@@ -312,8 +312,8 @@
         "twitter": "gitoac",
         "linkedin": "jorge-andrés-de-las-cuevas",
         "website": "http://jorgeac.com",
-        "image": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10530736_704085702992381_7033193699268880803_n.jpg?oh=1d204b8e02663e8bac8c6612b371adc4&oe=550D7DD4&__gda__=1426201864_477a2f16cb5f114545f999c89a49d584",
-        "thumbnail": "",
+        "image": "http://i.imgur.com/QwW0c8I.jpg",
+        "thumbnail": "http://i.imgur.com/U8d53Os.jpg",
         "location": {
             "lon": 43.42975,
             "lat": -3.927352
@@ -416,7 +416,7 @@
     },
     {
         "id": 19,
-        "msp": true,
+        "msp": false,
         "name": "Gorka",
         "lastname": "Madariaga",
         "years": [
@@ -464,6 +464,28 @@
         "location": {
             "lon": 36.715095,
             "lat": -4.476424
+        }
+    },
+    {
+        "id": 21,
+        "msp": true,
+        "name": "Juan Pedro",
+        "lastname": "Ramos Gómez",
+        "years": [
+            2015
+        ],
+        "city": "Almería",
+        "university": "Universidad de Almería",
+        "email": "contacto@jotaperamez.org",
+        "skills": "Java, HTML5, Web Forms, C#",
+        "twitter": "Jotaperamez",
+        "linkedin": "juanpedroramosgomez",
+        "website": "http://jotaperamezwordpress.azurewebsites.net",
+        "image": "https://pbs.twimg.com/profile_images/624528847782871040/eeeWF1LG.jpg",
+        "thumbnail": "http://s2.subirimagenes.com/otros/previo/thump_9430659thummap.jpg",
+        "location": {
+            "lon": 37.2153419,
+            "lat": -2.0673396
         }
     }
 ]

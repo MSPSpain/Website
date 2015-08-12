@@ -10,22 +10,8 @@
 	</header>
 	<article class="page__content">
 
-        <h2 class="github-title icon-git">¿Nos haces un fork?</h2>
-
-        <ul class="repos">
-            <li class="repos__item">
-                <div github-repo="MSPSpain/Website"></div>
-            </li>
-            <li class="repos__item">
-                <div github-repo="MSPSpain/Universal-App-MVVM"></div>
-            </li>
-            <li class="repos__item">
-                <div github-repo="MSPSpain/ArmDuino"></div>
-            </li>
-        </ul>
-
-        <h2 class="icon-barcode">¿Quiénes somos?</h2>
-        <div class="about">
+        <h2 class="icon-barcode">Conócenos</h2>
+        <div class="block about">
             <p>
                 <b>¿Qué es un MSP? </b>
                 Un <a href="http://microsoftstudentpartners.com">Microsoft Student Partner</a> es un estudiante que no se conforma solo con lo que aprende en la universidad, es una persona curiosa por la tecnología que
@@ -43,12 +29,54 @@
             </p>
         </div>
 
-        <h2 class="icon-table2">Calendario <i>(Próximamente)</i></h2>
-        <img style="width: 100%; opacity: 0.7;" src="/Content/images/calendar.jpg" alt="Calendar" />
+        <div class="block main_icons">
+            <div class="flex">
+                <div class="flex__item">
+                    <a href="http://visualstudio.com/free" target="_blank"><img src="Content/images/Icons/studio.png" alt="visual studio" /></a>
+                </div>
 
-        <div class="quote">
-            <h1>Ser de #MSPSpain es..</h1>
-            <h3 ng-bind="randomQuote"></h3>
+                <div class="flex__item">
+                    <a href="http://xamarin.com/" target="_blank"><img src="Content/images/Icons/xamarin.png" alt="xamarin" /></a>
+</div>
+
+                <div class="flex__item">
+                    <a href="http://cordova.apache.org/" target="_blank"><img src="Content/images/Icons/cordova.png" alt="apache cordova" /></a>
+</div>
+
+                <div class="flex__item">
+                    <a href="http://unity3d.com/es" target="_blank"><img src="Content/images/Icons/unity.png" alt="unity" /></a>
+</div>
+
+                <div class="flex__item">
+                    <a href="http://www.raspberrypi.org/" target="_blank"><img src="Content/images/Icons/berry.png" alt="berry" /></a>
+</div>
+
+                <div class="flex__item">
+                    <a href="http://www.microsoft.com/en-us/kinectforwindows/" target="_blank"><img src="Content/images/Icons/kinnect.png" alt="kinnect" /></a>
+                </div>
+
+            </div>
         </div>
-	</article>
+
+            <br />
+
+            <h2 class="github-title icon-git">¿Nos haces un fork?</h2>
+
+            <ul class="repos">
+                <li class="repos__item">
+                    <div github-repo="MSPSpain/Website"></div>
+                </li>
+                <li class="repos__item">
+                    <div github-repo="MSPSpain/Universal-App-MVVM"></div>
+                </li>
+                <li class="repos__item">
+                    <div github-repo="MSPSpain/ArmDuino"></div>
+                </li>
+            </ul>
+            <br />
+            <div class="quote">
+                <h1>Ser de #MSPSpain es..</h1>
+                <h3 ng-bind="randomQuote"></h3>
+            </div>
+</article>
 </section>   

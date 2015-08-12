@@ -22,7 +22,7 @@ module Msp {
         }
 
         getMspList() {
-            this.$http.get('/Content/FakeJSON/ProjectsJSON.txt').success((projectsJSON: any) => {
+            this.$http.get('/Content/FakeJSON/Projects.txt').success((projectsJSON: any) => {
                 for (var i: number = 0; i < projectsJSON.length; i++) {
                     this.projects[i] = <Project>projectsJSON[i];
                 }
