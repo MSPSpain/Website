@@ -488,5 +488,28 @@
             "lon": 37.2153419,
             "lat": -2.0673396
         }
+    },
+    {
+        "id": 22,
+        "msp": true,
+        "name": "Adrian",
+        "lastname": "Crespo Ortiz",
+        "years": [
+            2014,
+			2015
+        ],
+        "city": "Madrid",
+        "university": "Universidad Politécnica de Madrid",
+        "email": "madrid.crespo@gmail.com",
+        "skills": "HTML5, Java, PHP, Hacking, C#",
+        "twitter": "Codingfree",
+        "linkedin": "madridcrespo",
+        "website": "http://www.codingfree.com",
+        "image": "https://pbs.twimg.com/profile_images/612621436914659329/no1MfT1e_400x400.jpg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/612621436914659329/no1MfT1e_bigger.jpg",
+        "location": {
+            "lon": 40.499195,
+            "lat": -3.694147
+        }
     }
 ]
