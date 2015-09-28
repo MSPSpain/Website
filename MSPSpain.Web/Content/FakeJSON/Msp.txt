@@ -511,5 +511,27 @@
             "lon": 40.499195,
             "lat": -3.694147
         }
+    },
+    {
+        "id": 23,
+        "msp": true,
+        "name": "Jesús",
+        "lastname": "Marín García",
+        "years": [
+            2015
+        ],
+        "city": "Almería",
+        "university": "Universidad de Almería",
+        "email": "Jesus.MarinGarcia@studentpartner.com",
+        "skills": "Seguridad, BI, IoT, cloud, C#, Java",
+        "twitter": "_jesusmg",
+        "linkedin": "jesmg",
+        "website": "http://www.jesusmg.org",
+        "image": "https://pbs.twimg.com/profile_images/640266534884122624/0MYVa-Fh.jpg",
+        "thumbnail": "http://www.makeathumbnail.com/thumbnails/image409116.jpg",
+        "location": {
+            "lon": 37.2153419,
+            "lat": -2.0673396
+        }
     }
 ]
