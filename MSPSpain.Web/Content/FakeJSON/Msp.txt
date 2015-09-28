@@ -236,17 +236,18 @@
         "name": "José",
         "lastname": "Fonseca López",
         "years": [
-            2014
+            2014,
+            2015
         ],
         "city": "Madrid",
         "university": "Universidad Politécnica de Madrid",
-        "email": "",
+        "email": "Jose.Fonseca@studentpartner.com",
         "skills": "C#, Java",
         "twitter": "EEvo92",
         "linkedin": "José Fonseca López",
         "website": "",
-        "image": "https://pbs.twimg.com/profile_images/471699827034578944/zmoIn0wc.jpeg",
-        "thumbnail": "https://pbs.twimg.com/profile_images/471699827034578944/zmoIn0wc_normal.jpeg",
+        "image": "https://pbs.twimg.com/profile_images/648540068433539072/udQ2Qibc.jpg",
+        "thumbnail": "https://pbs.twimg.com/profile_images/648540068433539072/udQ2Qibc_bigger.jpg",
         "location": {
             "lon": 40.4072622,
             "lat": -3.6362286
