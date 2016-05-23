@@ -482,9 +482,9 @@
         "skills": "Java, C#, HTML5, CSS3, Web Forms",
         "twitter": "jotaperamez",
         "linkedin": "juanpedroramosgomez",
-        "website": "http://www.jotaperamez.org",
-        "image": "https://pbs.twimg.com/profile_images/628878814605668352/o0fUfoMi.jpg",
-        "thumbnail": "http://www.makeathumbnail.com/thumbnails/image392849.jpg",
+        "website": "",
+        "image": "https://avatars1.githubusercontent.com/u/10507381?v=3&s=460",
+        "thumbnail": "http://www.makeathumbnail.com/thumbnails/image494264.jpg",
         "location": {
             "lon": 37.2153419,
             "lat": -2.0673396
