@@ -67,7 +67,7 @@ namespace MSPSpain.Tests
         [TestMethod]
         public void ValidateImageSize()
         {
-            var result = JArray.Parse(File.ReadAllText(JSONS_PATH + "Msp.json")).Select(x => new { Thumbnail = x["thumbnail"].ToString(), Image = x["image"].ToString(), Name = x["name"] + " " + x["lastname"] });
+            var result = JArray.Parse(File.ReadAllText(JSONS_PATH + "Msp.txt")).Select(x => new { Thumbnail = x["thumbnail"].ToString(), Image = x["image"].ToString(), Name = x["name"] + " " + x["lastname"] });
             foreach (var msp in result)
             {
                 Assert.IsTrue(CheckSquareImage(msp.Thumbnail), "Thumbnail for " + msp.Name + " is not valid!");
